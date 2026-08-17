@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris · Neon Arcade</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--teal)">🧩 TETRIS</h1>
+
+    <div class="scorebar">
+      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Lines <b id="lines">0</b></span>
+      <span class="chip">Level <b id="level">1</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-340">
+      <canvas id="game" width="340" height="480"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">TETRIS</h2>
+        <p id="overlay-msg">◂ ▸ move · ▴ rotate · ▾ soft drop<br>Space hard-drops. P pauses.</p>
+        <button class="btn" id="overlay-btn">START</button>
+      </div>
+    </div>
+
+    <div class="pad">
+      <button class="pad-btn" id="btn-left" aria-label="Move left">◂</button>
+      <button class="pad-btn" id="btn-rot" aria-label="Rotate">⟳</button>
+      <button class="pad-btn" id="btn-down" aria-label="Soft drop">▾</button>
+      <button class="pad-btn" id="btn-drop" aria-label="Hard drop">⤓</button>
+      <button class="pad-btn" id="btn-right" aria-label="Move right">▸</button>
+    </div>
+
+    <p class="hint">Clear lines to level up — gravity gets serious fast.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/tetris.js"></script>
+</body>
+</html>

@@ -10,6 +10,9 @@ A game website — four classic browser games built with vanilla HTML, CSS, and 
 | 🧱 **Breakout** | Mouse, touch, or arrow keys. Click or Space launches the ball. |
 | 🃏 **Memory Match** | Click or tap to flip cards. |
 | 🔢 **2048** | Arrow keys / WASD, swipe on mobile. |
+| 🧩 **Tetris** | Arrows move/rotate/soft-drop, Space hard-drops, on-screen pad on mobile. P pauses. |
+| 🐤 **Flappy Bird** | Click, tap, or Space to flap. |
+| 💣 **Minesweeper** | Click reveals, right-click or long-press flags. First click is always safe. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 

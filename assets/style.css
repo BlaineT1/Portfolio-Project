@@ -12,6 +12,8 @@
   --purple: #8b5cf6;
   --lime: #a3ff12;
   --amber: #ffb020;
+  --teal: #2dd4bf;
+  --orange: #ff7a1a;
   --radius: 14px;
   --font-arcade: "Press Start 2P", monospace;
 }
@@ -197,6 +199,7 @@ footer {
   box-shadow: 0 12px 48px -12px rgba(0, 0, 0, 0.8);
 }
 
+.stage-340 { max-width: 340px; }
 .stage-420 { max-width: 420px; }
 .stage-560 { max-width: 560px; }
 
@@ -258,6 +261,31 @@ footer {
 .btn:hover { transform: translateY(-2px); filter: brightness(1.15); }
 .btn:active { transform: translateY(0); }
 
+.btn-sm { font-size: 0.6rem; padding: 10px 16px; }
+
+/* ── Touch pad (Tetris) ──────────────────────────────────────── */
+
+.pad {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.pad-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+
+.pad-btn:hover { border-color: var(--teal); }
+.pad-btn:active { background: var(--panel-2); border-color: var(--cyan); }
+
 /* ── Memory Match ────────────────────────────────────────────── */
 
 .memory-board {
@@ -316,6 +344,52 @@ footer {
   border-color: var(--lime);
   box-shadow: 0 0 14px rgba(163, 255, 18, 0.35) inset;
 }
+
+/* ── Minesweeper ─────────────────────────────────────────────── */
+
+.mine-board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 4px;
+  width: 100%;
+  padding: 12px;
+}
+
+.mine-cell {
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #232347, #1a1a34);
+  cursor: pointer;
+  font-family: var(--font-arcade);
+  font-size: clamp(0.55rem, 2.6vw, 0.8rem);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.mine-cell:hover { border-color: var(--pink); }
+
+.mine-cell.revealed {
+  background: #101020;
+  border-color: #1c1c38;
+  cursor: default;
+}
+
+.mine-cell.boom { background: #3d0f1f; border-color: var(--pink); }
+
+.mine-cell.n1 { color: var(--cyan); }
+.mine-cell.n2 { color: var(--lime); }
+.mine-cell.n3 { color: var(--pink); }
+.mine-cell.n4 { color: var(--purple); }
+.mine-cell.n5 { color: var(--amber); }
+.mine-cell.n6 { color: var(--teal); }
+.mine-cell.n7 { color: #ffffff; }
+.mine-cell.n8 { color: var(--muted); }
 
 /* ── 2048 ────────────────────────────────────────────────────── */
 

@@ -49,6 +49,30 @@
       <p>Slide, merge, repeat. Can you build the 2048 tile?</p>
       <p class="best" data-best="2048">Best: —</p>
     </a>
+
+    <a class="card" href="tetris.html" style="--accent: var(--teal)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🧩</div>
+      <h2>Tetris</h2>
+      <p>Stack the pieces, clear the lines, survive the speed-up.</p>
+      <p class="best" data-best="tetris">Best: —</p>
+    </a>
+
+    <a class="card" href="flappy.html" style="--accent: var(--orange)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🐤</div>
+      <h2>Flappy Bird</h2>
+      <p>One button, endless pipes, instant regret. Flap on.</p>
+      <p class="best" data-best="flappy">Best: —</p>
+    </a>
+
+    <a class="card" href="minesweeper.html" style="--accent: var(--pink)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">💣</div>
+      <h2>Minesweeper</h2>
+      <p>Ten mines, eighty-one cells, zero room for guesswork.</p>
+      <p class="best" data-best="mines" data-best-time="1">Best: —</p>
+    </a>
   </main>
 
   <footer>Built with vanilla HTML, CSS &amp; JavaScript · No tracking, no ads, just games</footer>
@@ -57,7 +81,11 @@
   <script>
     document.querySelectorAll("[data-best]").forEach((el) => {
       const best = Arcade.getBest(el.dataset.best);
-      if (best > 0) {
+      if (best <= 0) return;
+      if (el.dataset.bestTime) {
+        el.textContent =
+          "Best: " + Math.floor(best / 60) + ":" + String(best % 60).padStart(2, "0");
+      } else {
         const unit = el.dataset.bestUnit ? " " + el.dataset.bestUnit : "";
         el.textContent = "Best: " + best + unit;
       }
