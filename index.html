@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Arcade</title>
+  <meta name="description" content="A game website: play Snake, Breakout, Memory Match, and 2048 right in your browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕹️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">NEON ARCADE</h1>
+    <p class="tagline">Pick a game. Beat your best. Scores stay in your browser.</p>
+  </header>
+
+  <main class="hub">
+    <a class="card" href="snake.html" style="--accent: var(--lime)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🐍</div>
+      <h2>Snake</h2>
+      <p>Eat, grow, and don't bite yourself. It only gets faster.</p>
+      <p class="best" data-best="snake">Best: —</p>
+    </a>
+
+    <a class="card" href="breakout.html" style="--accent: var(--cyan)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🧱</div>
+      <h2>Breakout</h2>
+      <p>Smash every brick. Three lives, one paddle, no mercy.</p>
+      <p class="best" data-best="breakout">Best: —</p>
+    </a>
+
+    <a class="card" href="memory.html" style="--accent: var(--purple)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🃏</div>
+      <h2>Memory Match</h2>
+      <p>Flip the cards and find every pair in as few moves as you can.</p>
+      <p class="best" data-best="memory" data-best-unit="moves" data-best-lower="1">Best: —</p>
+    </a>
+
+    <a class="card" href="2048.html" style="--accent: var(--amber)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🔢</div>
+      <h2>2048</h2>
+      <p>Slide, merge, repeat. Can you build the 2048 tile?</p>
+      <p class="best" data-best="2048">Best: —</p>
+    </a>
+  </main>
+
+  <footer>Built with vanilla HTML, CSS &amp; JavaScript · No tracking, no ads, just games</footer>
+
+  <script src="assets/arcade.js"></script>
+  <script>
+    document.querySelectorAll("[data-best]").forEach((el) => {
+      const best = Arcade.getBest(el.dataset.best);
+      if (best > 0) {
+        const unit = el.dataset.bestUnit ? " " + el.dataset.bestUnit : "";
+        el.textContent = "Best: " + best + unit;
+      }
+    });
+  </script>
+</body>
+</html>

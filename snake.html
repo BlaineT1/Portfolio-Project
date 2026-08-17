@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake · Neon Arcade</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--lime)">🐍 SNAKE</h1>
+
+    <div class="scorebar">
+      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-420">
+      <canvas id="game" width="420" height="420"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">SNAKE</h2>
+        <p id="overlay-msg">Arrow keys or WASD to steer.<br>Swipe on mobile. P or Space pauses.</p>
+        <button class="btn" id="overlay-btn">START</button>
+      </div>
+    </div>
+
+    <p class="hint">Every snack makes you longer — and faster.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/snake.js"></script>
+</body>
+</html>
