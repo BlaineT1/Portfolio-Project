@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake · Neon Arcade</title>
+  <title>Whack-a-Mole · Neon Arcade</title>
   <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔨</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,26 +15,27 @@
   <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
 
   <main class="game-shell">
-    <h1 class="game-title" style="color: var(--lime)">🐍 SNAKE</h1>
+    <h1 class="game-title" style="color: var(--orange)">🔨 WHACK-A-MOLE</h1>
 
     <div class="scorebar">
       <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Time <b id="time">30</b></span>
       <span class="chip">Best <b id="best">0</b></span>
     </div>
 
     <div class="stage stage-420">
-      <canvas id="game" width="420" height="420"></canvas>
+      <div class="whack-board" id="board"></div>
       <div class="overlay" id="overlay">
-        <h2 id="overlay-title">SNAKE</h2>
-        <p id="overlay-msg">Arrow keys or WASD to steer.<br>Swipe on mobile. P or Space pauses.</p>
+        <h2 id="overlay-title">WHACK-A-MOLE</h2>
+        <p id="overlay-msg">Bop the hamsters: +1 point.<br>Hit a bomb: −5. You have 30 seconds.</p>
         <button class="btn" id="overlay-btn">START</button>
       </div>
     </div>
 
-    <p class="hint">Every snack makes you longer — and faster.</p>
+    <p class="hint">They pop up faster as the clock runs down.</p>
   </main>
 
   <script src="assets/arcade.js"></script>
-  <script src="assets/snake.js"></script>
+  <script src="assets/whack.js"></script>
 </body>
 </html>

@@ -75,6 +75,7 @@
     if (lock || card === first || card.classList.contains("matched")) return;
     if (!started) startTimer();
 
+    Sound.flip();
     card.classList.add("flipped");
 
     if (!first) {
@@ -86,6 +87,7 @@
     movesEl.textContent = String(moves);
 
     if (first.dataset.emoji === card.dataset.emoji) {
+      Sound.match();
       first.classList.add("matched");
       card.classList.add("matched");
       first = null;
@@ -105,6 +107,7 @@
 
   function win() {
     clearInterval(timer);
+    Sound.win();
     const isBest = Arcade.saveBest("memory", moves, true);
     showBest();
     overlayMsg.innerHTML =

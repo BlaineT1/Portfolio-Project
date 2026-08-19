@@ -91,6 +91,7 @@
   }
 
   function lock() {
+    Sound.lockPiece();
     for (let r = 0; r < cur.m.length; r++) {
       for (let c = 0; c < cur.m[r].length; c++) {
         if (cur.m[r][c]) board[cur.y + r][cur.x + c] = cur.color;
@@ -106,6 +107,7 @@
     if (!n) return;
     while (kept.length < ROWS) kept.unshift(Array(COLS).fill(0));
     board = kept;
+    Sound.clearLine();
     score += [0, 100, 300, 500, 800][n] * level;
     lines += n;
     level = 1 + Math.floor(lines / 10);
@@ -126,6 +128,7 @@
       if (!collides(nm, cur.x + off, cur.y)) {
         cur.m = nm;
         cur.x += off;
+        Sound.click();
         break;
       }
     }
@@ -158,6 +161,7 @@
   function gameOver() {
     state = "over";
     clearTimeout(timer);
+    Sound.die();
     const isBest = Arcade.saveBest("tetris", score);
     bestEl.textContent = Arcade.getBest("tetris");
     overlayTitle.textContent = "GAME OVER";

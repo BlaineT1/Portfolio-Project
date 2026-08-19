@@ -75,6 +75,7 @@
   function move(dirKey) {
     if (over) return;
 
+    const scoreBefore = score;
     let g = grid;
     if (dirKey === "up") g = transpose(g);
     if (dirKey === "down") g = reverseRows(transpose(g));
@@ -91,6 +92,8 @@
 
     if (!changed) return;
 
+    if (score > scoreBefore) Sound.merge();
+    else Sound.click();
     addTile();
     Arcade.saveBest("2048", score);
     updateHud();
@@ -125,6 +128,7 @@
   }
 
   function celebrate() {
+    Sound.win();
     overlayTitle.textContent = "2048!";
     overlayMsg.textContent = "You built the tile. Keep going for a higher score?";
     overlayBtn.textContent = "KEEP GOING";
@@ -133,6 +137,7 @@
 
   function gameOver() {
     over = true;
+    Sound.die();
     const isBest = Arcade.saveBest("2048", score);
     updateHud();
     overlayTitle.textContent = "GAME OVER";

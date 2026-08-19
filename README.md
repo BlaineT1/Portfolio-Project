@@ -13,8 +13,13 @@ A game website — four classic browser games built with vanilla HTML, CSS, and 
 | 🧩 **Tetris** | Arrows move/rotate/soft-drop, Space hard-drops, on-screen pad on mobile. P pauses. |
 | 🐤 **Flappy Bird** | Click, tap, or Space to flap. |
 | 💣 **Minesweeper** | Click reveals, right-click or long-press flags. First click is always safe. |
+| 🏓 **Pong** | Mouse, touch, or ↑ ↓ keys. First to 7 beats the CPU. |
+| 🧠 **Simon** | Click the pads to repeat the growing sequence. |
+| 🔨 **Whack-a-Mole** | Click or tap the hamsters, dodge the bombs. 30-second rounds. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
+
+Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
 ## Run it locally
 

@@ -132,6 +132,7 @@
       ball.dx = speed * Math.sin(angle);
       ball.dy = -Math.abs(speed * Math.cos(angle));
       ball.y = PADDLE_Y - BALL_R;
+      Sound.bounce();
     }
 
     // Bricks
@@ -146,6 +147,7 @@
         b.alive = false;
         score += (ROWS - b.row) * 10;
         updateHud();
+        Sound.brick();
 
         // Bounce off the nearest face
         const overlapX = Math.min(
@@ -169,6 +171,7 @@
       lives -= 1;
       updateHud();
       if (lives <= 0) return gameOver();
+      Sound.die();
       resetBall();
     }
   }
@@ -185,10 +188,12 @@
   }
 
   function gameOver() {
+    Sound.die();
     endRound("GAME OVER", "Score: " + score);
   }
 
   function win() {
+    Sound.win();
     endRound("YOU WIN!", "Every brick smashed. Score: " + score);
   }
 

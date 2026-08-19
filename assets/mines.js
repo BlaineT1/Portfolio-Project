@@ -120,6 +120,7 @@
       startTimer();
     }
     if (mines.has(i)) return boom(i);
+    Sound.click();
 
     const queue = [i];
     while (queue.length) {
@@ -145,6 +146,7 @@
   function toggleFlag(i) {
     if (over || revealed.has(i)) return;
     if (!started) return; // no flagging before the board exists
+    Sound.flag();
     const cell = cells[i];
     if (flags.has(i)) {
       flags.delete(i);
@@ -159,6 +161,7 @@
   function boom(hit) {
     over = true;
     clearInterval(timer);
+    Sound.boom();
     mines.forEach((m) => {
       cells[m].classList.add("revealed");
       cells[m].textContent = m === hit ? "💥" : "💣";
@@ -173,6 +176,7 @@
     if (revealed.size !== N * N - MINES) return;
     over = true;
     clearInterval(timer);
+    Sound.win();
     mines.forEach((m) => {
       if (!flags.has(m)) cells[m].textContent = "🚩";
     });

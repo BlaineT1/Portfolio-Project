@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Snake · Neon Arcade</title>
+  <title>Simon · Neon Arcade</title>
   <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,26 +15,31 @@
   <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
 
   <main class="game-shell">
-    <h1 class="game-title" style="color: var(--lime)">🐍 SNAKE</h1>
+    <h1 class="game-title" style="color: var(--lime)">🧠 SIMON</h1>
 
     <div class="scorebar">
-      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Round <b id="round">0</b></span>
       <span class="chip">Best <b id="best">0</b></span>
     </div>
 
     <div class="stage stage-420">
-      <canvas id="game" width="420" height="420"></canvas>
+      <div class="simon-board" id="board">
+        <button class="simon-pad simon-0" data-pad="0" aria-label="Green pad"></button>
+        <button class="simon-pad simon-1" data-pad="1" aria-label="Pink pad"></button>
+        <button class="simon-pad simon-2" data-pad="2" aria-label="Amber pad"></button>
+        <button class="simon-pad simon-3" data-pad="3" aria-label="Cyan pad"></button>
+      </div>
       <div class="overlay" id="overlay">
-        <h2 id="overlay-title">SNAKE</h2>
-        <p id="overlay-msg">Arrow keys or WASD to steer.<br>Swipe on mobile. P or Space pauses.</p>
+        <h2 id="overlay-title">SIMON</h2>
+        <p id="overlay-msg">Watch the pads light up,<br>then play the sequence back.</p>
         <button class="btn" id="overlay-btn">START</button>
       </div>
     </div>
 
-    <p class="hint">Every snack makes you longer — and faster.</p>
+    <p class="hint" id="status">Each round adds one more step.</p>
   </main>
 
   <script src="assets/arcade.js"></script>
-  <script src="assets/snake.js"></script>
+  <script src="assets/simon.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
   <meta name="description" content="A game website: play Snake, Breakout, Memory Match, and 2048 right in your browser.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕹️</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,6 +73,30 @@
       <h2>Minesweeper</h2>
       <p>Ten mines, eighty-one cells, zero room for guesswork.</p>
       <p class="best" data-best="mines" data-best-time="1">Best: —</p>
+    </a>
+
+    <a class="card" href="pong.html" style="--accent: var(--purple)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🏓</div>
+      <h2>Pong</h2>
+      <p>First to seven against a CPU that never blinks.</p>
+      <p class="best" data-best="pong" data-best-unit="wins">Best: —</p>
+    </a>
+
+    <a class="card" href="simon.html" style="--accent: var(--lime)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🧠</div>
+      <h2>Simon</h2>
+      <p>Watch the pattern, play it back. It gets long.</p>
+      <p class="best" data-best="simon" data-best-unit="rounds">Best: —</p>
+    </a>
+
+    <a class="card" href="whack.html" style="--accent: var(--orange)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🔨</div>
+      <h2>Whack-a-Mole</h2>
+      <p>Thirty seconds, nine holes, endless hamsters. Mind the bombs.</p>
+      <p class="best" data-best="whack">Best: —</p>
     </a>
   </main>
 

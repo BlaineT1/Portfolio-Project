@@ -44,7 +44,9 @@
   }
 
   function flap() {
-    if (state === "running") bird.vy = FLAP;
+    if (state !== "running") return;
+    bird.vy = FLAP;
+    Sound.flap();
   }
 
   function loop() {
@@ -76,6 +78,7 @@
         p.scored = true;
         score += 1;
         scoreEl.textContent = String(score);
+        Sound.point();
       }
       if (
         BIRD_X + R > p.x &&
@@ -91,6 +94,7 @@
   function die() {
     state = "over";
     cancelAnimationFrame(raf);
+    Sound.die();
     const isBest = Arcade.saveBest("flappy", score);
     bestEl.textContent = Arcade.getBest("flappy");
     overlayTitle.textContent = "GAME OVER";

@@ -67,6 +67,7 @@
 
     snake.unshift(head);
     if (head.x === food.x && head.y === food.y) {
+      Sound.eat();
       score += 10;
       scoreEl.textContent = String(score);
       delay = Math.max(60, delay - 3);
@@ -79,6 +80,7 @@
   function gameOver() {
     state = "over";
     clearTimeout(timer);
+    Sound.die();
     const isBest = Arcade.saveBest("snake", score);
     bestEl.textContent = Arcade.getBest("snake");
     overlayTitle.textContent = "GAME OVER";
