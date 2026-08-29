@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✌️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--amber)">✌️ ROCK PAPER SCISSORS</h1>
+
+    <div class="scorebar">
+      <span class="chip">Streak <b id="streak">0</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-420">
+      <div class="rps-display">
+        <div class="rps-hands">
+          <span id="your-hand">❔</span>
+          <span class="rps-vs">VS</span>
+          <span id="cpu-hand">❔</span>
+        </div>
+        <p class="rps-result" id="result">Pick your weapon</p>
+      </div>
+    </div>
+
+    <div class="pad">
+      <button class="pad-btn" id="pick-rock" aria-label="Rock">✊</button>
+      <button class="pad-btn" id="pick-paper" aria-label="Paper">✋</button>
+      <button class="pad-btn" id="pick-scissors" aria-label="Scissors">✌️</button>
+    </div>
+
+    <p class="hint">Win streaks are the score. One loss resets you to zero.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/rps.js"></script>
+</body>
+</html>

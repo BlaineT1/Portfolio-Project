@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Jump · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦘</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--pink)">🦘 SKY JUMP</h1>
+
+    <div class="scorebar">
+      <span class="chip">Height <b id="score">0</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-380">
+      <canvas id="game" width="380" height="520"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">SKY JUMP</h2>
+        <p id="overlay-msg">◂ ▸ steer — you bounce automatically.<br>On mobile, hold the left or right half.</p>
+        <button class="btn" id="overlay-btn">START</button>
+      </div>
+    </div>
+
+    <p class="hint">Cyan platforms drift. Falling off the bottom is final.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/jump.js"></script>
+</body>
+</html>

@@ -262,7 +262,10 @@ footer {
 }
 
 .stage-340 { max-width: 340px; }
+.stage-380 { max-width: 380px; }
 .stage-420 { max-width: 420px; }
+.stage-480 { max-width: 480px; }
+.stage-520 { max-width: 520px; }
 .stage-560 { max-width: 560px; }
 
 .stage canvas {
@@ -405,6 +408,229 @@ footer {
 .mem-card.matched .mem-back {
   border-color: var(--lime);
   box-shadow: 0 0 14px rgba(163, 255, 18, 0.35) inset;
+}
+
+/* ── Tic-Tac-Toe ─────────────────────────────────────────────── */
+
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+}
+
+.ttt-cell {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #1a1a34;
+  font-family: var(--font-arcade);
+  font-size: clamp(1.4rem, 7vw, 2.4rem);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.ttt-cell:hover { border-color: var(--cyan); }
+.ttt-cell.x { color: var(--cyan); }
+.ttt-cell.o { color: var(--pink); }
+.ttt-cell.winline { background: #26264c; border-color: var(--lime); }
+
+/* ── Connect Four ────────────────────────────────────────────── */
+
+.c4-board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  width: 100%;
+  padding: 12px;
+}
+
+.c4-cell {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #101020;
+  cursor: pointer;
+  padding: 0;
+}
+
+.c4-cell.p1 { background: #00e5ff; box-shadow: 0 0 10px rgba(0, 229, 255, 0.5); border-color: transparent; }
+.c4-cell.p2 { background: #ff2e88; box-shadow: 0 0 10px rgba(255, 46, 136, 0.5); border-color: transparent; }
+.c4-cell.drop { animation: pop 0.18s ease; }
+
+/* ── Aim Trainer ─────────────────────────────────────────────── */
+
+.aim-arena {
+  position: relative;
+  height: 420px;
+  width: 100%;
+  cursor: crosshair;
+  overflow: hidden;
+}
+
+.target {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 16%, var(--pink) 17% 42%, #fff 43% 62%, var(--pink) 63%);
+  box-shadow: 0 0 16px rgba(255, 46, 136, 0.6);
+  animation: shrink 1.6s linear forwards;
+  cursor: crosshair;
+  border: none;
+  padding: 0;
+}
+
+@keyframes shrink {
+  from { transform: scale(1); }
+  to { transform: scale(0); }
+}
+
+/* ── Rock Paper Scissors ─────────────────────────────────────── */
+
+.rps-display {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.rps-hands {
+  font-size: clamp(2.4rem, 10vw, 4rem);
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.rps-vs { font-family: var(--font-arcade); font-size: 0.7rem; color: var(--muted); }
+
+.rps-result {
+  font-family: var(--font-arcade);
+  font-size: 0.85rem;
+  color: var(--cyan);
+  min-height: 1.4em;
+}
+
+/* ── Word Guess ──────────────────────────────────────────────── */
+
+.word-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  align-items: center;
+}
+
+.word-row { display: flex; gap: 8px; }
+
+.wtile {
+  width: clamp(40px, 12vw, 56px);
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #101020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-arcade);
+  font-size: 1.05rem;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.wtile.filled { border-color: var(--muted); }
+.wtile.green { background: #1f7a33; border-color: #2ea043; }
+.wtile.yellow { background: #8a6d00; border-color: #b08800; }
+.wtile.gray { background: #22223a; border-color: #22223a; color: var(--muted); }
+
+.kb {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+}
+
+.kb-row { display: flex; gap: 5px; justify-content: center; width: 100%; }
+
+.kb-key {
+  flex: 1;
+  max-width: 42px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.kb-key.wide { max-width: 66px; flex: 1.7; font-size: 0.6rem; }
+.kb-key.green { background: #1f7a33; color: #fff; border-color: #2ea043; }
+.kb-key.yellow { background: #8a6d00; color: #fff; border-color: #b08800; }
+.kb-key.gray { opacity: 0.4; }
+
+/* ── Slide Puzzle ────────────────────────────────────────────── */
+
+.slide-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+}
+
+.slide-tile {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #26264c;
+  color: var(--text);
+  font-family: var(--font-arcade);
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  cursor: pointer;
+  padding: 0;
+}
+
+.slide-tile:hover { border-color: var(--teal); }
+.slide-tile.blank { background: transparent; border-color: transparent; cursor: default; }
+
+/* ── Lights Out ──────────────────────────────────────────────── */
+
+.lights-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+}
+
+.light-cell {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #14142a;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.light-cell.on {
+  background: var(--amber);
+  box-shadow: 0 0 18px rgba(255, 176, 32, 0.55);
+  border-color: transparent;
 }
 
 /* ── Simon ───────────────────────────────────────────────────── */

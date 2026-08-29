@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--amber)">💡 LIGHTS OUT</h1>
+
+    <div class="scorebar">
+      <span class="chip">Moves <b id="moves">0</b></span>
+      <span class="chip">Lit <b id="lit">0</b></span>
+      <span class="chip">Best <b id="best">—</b></span>
+    </div>
+
+    <div class="stage stage-420">
+      <div class="lights-board" id="board"></div>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">LIGHTS OUT!</h2>
+        <p id="overlay-msg"></p>
+        <button class="btn" id="overlay-btn">NEW PUZZLE</button>
+      </div>
+    </div>
+
+    <button class="btn btn-sm" id="new-btn">NEW PUZZLE</button>
+
+    <p class="hint">Clicking a cell flips it and its neighbors. Turn every light off.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/lights.js"></script>
+</body>
+</html>

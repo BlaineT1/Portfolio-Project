@@ -1,6 +1,6 @@
 # 🕹️ Neon Arcade
 
-A game website — four classic browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
+A game website — 21 classic browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
 ## Games
 
@@ -16,6 +16,17 @@ A game website — four classic browser games built with vanilla HTML, CSS, and 
 | 🏓 **Pong** | Mouse, touch, or ↑ ↓ keys. First to 7 beats the CPU. |
 | 🧠 **Simon** | Click the pads to repeat the growing sequence. |
 | 🔨 **Whack-a-Mole** | Click or tap the hamsters, dodge the bombs. 30-second rounds. |
+| 👾 **Invaders** | ◂ ▸ move, Space shoots. Drag + tap on mobile. |
+| ☄️ **Asteroids** | Arrows turn/thrust, Space fires. On-screen pad on mobile. |
+| 🐸 **Froggy Road** | Arrows or swipe to hop. Ride logs, dodge cars. |
+| 🦘 **Sky Jump** | ◂ ▸ steer, automatic bouncing. Hold a screen half on mobile. |
+| ❌ **Tic-Tac-Toe** | Click a square. The CPU plays minimax (with rare lapses). |
+| 🔴 **Connect Four** | Click a column to drop. CPU blocks and counter-attacks. |
+| 🔤 **Word Guess** | Type or tap 5-letter guesses; 6 tries; streaks tracked. |
+| 🎯 **Aim Trainer** | Click shrinking targets for 30 seconds. |
+| ✌️ **Rock Paper Scissors** | Pick a hand, ride the win streak. |
+| 🧊 **Slide Puzzle** | Click tiles next to the gap (or arrow keys) to restore 1–15. |
+| 💡 **Lights Out** | Each click flips a plus-shape. Turn every light off. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 
