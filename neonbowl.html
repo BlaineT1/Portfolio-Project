@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Bowl · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--orange)">🏈 NEON BOWL</h1>
+
+    <div class="scorebar">
+      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Down <b id="down">1st &amp; 10</b></span>
+      <span class="chip">Clock <b id="clock">1:00</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-560">
+      <canvas id="game" width="560" height="420"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">NEON BOWL</h2>
+        <p id="overlay-msg">Space or tap snaps the ball. Arrows / drag to run.<br>Space again throws to the open receiver, or tap a receiver.<br>Sixty seconds. Score touchdowns.</p>
+        <button class="btn" id="overlay-btn">KICKOFF</button>
+      </div>
+    </div>
+
+    <p class="hint">Blue line is the snap, yellow is the first-down marker. Four downs to make ten yards. P pauses.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/neonbowl.js"></script>
+</body>
+</html>

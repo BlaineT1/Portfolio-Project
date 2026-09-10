@@ -1,6 +1,6 @@
 # 🕹️ Neon Arcade
 
-A game website — 21 classic browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
+A game website — 22 original browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
 ## Games
 
@@ -27,6 +27,7 @@ A game website — 21 classic browser games built with vanilla HTML, CSS, and Ja
 | ✌️ **Rock Paper Scissors** | Pick a hand, ride the win streak. |
 | 🧊 **Slide Puzzle** | Click tiles next to the gap (or arrow keys) to restore 1–15. |
 | 💡 **Lights Out** | Each click flips a plus-shape. Turn every light off. |
+| 🏈 **Neon Bowl** | Space/tap snaps, arrows/drag run, Space or tapping a receiver throws. Four downs, 60 seconds. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 
