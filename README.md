@@ -41,8 +41,11 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Host it for free on GitHub Pages
+## Play it live
 
-1. Go to the repo's **Settings → Pages**
-2. Under **Build and deployment**, choose **Deploy from a branch** and pick the default branch (root folder)
-3. Your arcade goes live at `https://<username>.github.io/<repo-name>/`
+**https://blainet1.github.io/Portfolio-Project/**
+
+Hosting is GitHub Pages, served from the `gh-pages` branch. The workflow in
+`.github/workflows/pages.yml` republishes that branch on every push, so the
+live site updates itself about a minute after each commit. Nothing to build,
+nothing to configure.
