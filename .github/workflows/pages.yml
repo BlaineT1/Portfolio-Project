@@ -1,14 +1,16 @@
 name: Deploy to GitHub Pages
 
+# Publishes the site to the gh-pages branch, which GitHub Pages serves.
+# Pushing to gh-pages only needs the default token's contents:write,
+# so no repo-admin permissions are involved.
+
 on:
   push:
     branches: [claude/rename-repo-game-website-piwcue]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -17,20 +19,8 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
-      # enablement: true turns Pages on for the repo if it isn't already
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish to gh-pages
+        run: git push --force origin HEAD:refs/heads/gh-pages
