@@ -131,6 +131,16 @@ const Theme = {
   },
 };
 
+/* ── Site footer, injected on every page ────────────────────── */
+
+(() => {
+  const footer = document.createElement("footer");
+  footer.innerHTML =
+    'Made by <a href="https://github.com/BlaineT1">Blaine</a>' +
+    " · Built with vanilla HTML, CSS &amp; JavaScript · No tracking, no ads, just games";
+  document.body.appendChild(footer);
+})();
+
 /* ── Floating theme + sound buttons on every page ───────────── */
 
 (() => {
