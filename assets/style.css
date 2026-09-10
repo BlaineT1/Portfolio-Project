@@ -410,6 +410,34 @@ footer {
   box-shadow: 0 0 14px rgba(163, 255, 18, 0.35) inset;
 }
 
+/* ── Embedded third-party games ──────────────────────────────── */
+
+.game-shell-wide { width: min(980px, calc(100% - 32px)); }
+.frame-stage { max-width: 960px; }
+
+.game-frame {
+  display: block;
+  width: 100%;
+  height: 640px;
+  border: 0;
+  background: #000;
+}
+
+.credit { color: var(--muted); font-size: 0.85rem; margin: -6px 0 0; text-align: center; }
+.credit a { color: var(--cyan); }
+
+.section-title {
+  grid-column: 1 / -1;
+  font-family: var(--font-arcade);
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 28px 0 0;
+}
+
+.card.external .play::after { content: " ↗"; }
+
 /* ── Tic-Tac-Toe ─────────────────────────────────────────────── */
 
 .ttt-board {

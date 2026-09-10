@@ -32,6 +32,19 @@ High scores are saved per game in your browser's localStorage — nothing leaves
 
 Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
+## More games from around the web
+
+The hub's last section links to **Retro Bowl** (New Star Games' official browser version, which is only playable on Poki, so it opens there) and hosts four open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+
+| Game | Author | License |
+|------|--------|---------|
+| 🐦 Clumsy Bird | [Ellison Leão](https://github.com/ellisonleao/clumsy-bird) | GPL-3.0 |
+| ⬡ Hextris | [Logan Engstrom & Garrett Finucane](https://github.com/Hextris/hextris) | GPL-3.0 |
+| 🟡 Pac-Man | [Platzh1rsch](https://github.com/platzhersh/pacman-canvas) | CC0 1.0 |
+| 🔮 Astray | [Rye Terrell](https://github.com/wwwtyro/Astray) | Unlicense |
+
+Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
+
 ## Run it locally
 
 No build step needed. Either open `index.html` directly, or serve the folder:
