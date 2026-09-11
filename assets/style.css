@@ -438,6 +438,16 @@ footer {
 
 .card.external .play::after { content: " ↗"; }
 
+.card-links {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.card-links .btn { text-align: center; }
+
 /* ── Tic-Tac-Toe ─────────────────────────────────────────────── */
 
 .ttt-board {
