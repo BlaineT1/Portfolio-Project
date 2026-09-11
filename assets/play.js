@@ -74,13 +74,6 @@
       license: "MIT", height: 640,
       hint: "A 13-kilobyte twin-stick shooter. WASD to move, mouse to aim and shoot. Find the terminals.",
     },
-    duckhunt: {
-      name: "DuckHunt JS", title: "🦆 DUCKHUNT JS", color: "var(--amber)",
-      src: "games/duckhunt/index.html", author: "Matt Surabian",
-      authorUrl: "https://github.com/MattSurabian", source: "https://github.com/MattSurabian/DuckHunt-JS",
-      license: "MIT", height: 640,
-      hint: "Click or tap the ducks before they fly off. Three shots per pair.",
-    },
     astray: {
       name: "Astray",
       title: "🔮 ASTRAY",
