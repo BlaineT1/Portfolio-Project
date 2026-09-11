@@ -899,7 +899,10 @@
 
   overlayBtn.addEventListener("click", () => {
     if (state === "paused" || state === "between") return run();
-    if (state === "over") return showIntro();
+    if (state === "over") {
+      newMatch(); // scoreboard and season line now describe the upcoming game
+      return showIntro();
+    }
     startGame();
   });
 
