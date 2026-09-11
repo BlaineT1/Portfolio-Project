@@ -318,6 +318,10 @@
       (season.done ? "<br>Season over · record " + record(season.teams[0]) : "") +
       standingsHtml();
     overlayBtn.textContent = season.done ? "NEW SEASON" : "NEXT GAME";
+    statusEl.textContent = "Final whistle.";
+    seasonEl.textContent =
+      "WEEK " + (season.week - 1) + " OF " + SEASON_GAMES + " · vs " + season.teams[match.opp].name.toUpperCase() +
+      " · FINAL · RECORD " + record(season.teams[0]);
     overlay.classList.remove("hidden");
     draw();
   }

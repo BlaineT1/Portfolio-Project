@@ -439,6 +439,7 @@ footer {
 /* ── Neon Bowl: play calls + standings ───────────────────────── */
 
 .play-pad { flex-wrap: wrap; }
+.play-pad[hidden] { display: none; }
 
 .play-btn {
   width: auto;
