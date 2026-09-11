@@ -27,7 +27,7 @@ A game website — 22 original browser games built with vanilla HTML, CSS, and J
 | ✌️ **Rock Paper Scissors** | Pick a hand, ride the win streak. |
 | 🧊 **Slide Puzzle** | Click tiles next to the gap (or arrow keys) to restore 1–15. |
 | 💡 **Lights Out** | Each click flips a plus-shape. Turn every light off. |
-| 🏈 **Neon Bowl** | Space/tap snaps, arrows/drag run, Space or tapping a receiver throws. Four downs, 60 seconds. |
+| 🏈 **Neon Bowl** | Call plays with 1–5 (or the buttons), arrows/drag to run, Space or tap a receiver to throw, Space stops the kick meter. On defense you're the cyan linebacker. Two 90-second halves; an 8-game season with standings is saved between visits. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 
@@ -35,7 +35,7 @@ Every page has two floating buttons in the top-right corner: a **dark/light them
 
 ## More games from around the web
 
-The hub's last section links to **Retro Bowl** (New Star Games' official browser version, which is only playable on Poki, so it opens there) and hosts four open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts four open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|

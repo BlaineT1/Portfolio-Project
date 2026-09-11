@@ -18,22 +18,32 @@
     <h1 class="game-title" style="color: var(--orange)">🏈 NEON BOWL</h1>
 
     <div class="scorebar">
-      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">You <b id="you">0</b></span>
+      <span class="chip">CPU <b id="cpu">0</b></span>
       <span class="chip">Down <b id="down">1st &amp; 10</b></span>
-      <span class="chip">Clock <b id="clock">1:00</b></span>
-      <span class="chip">Best <b id="best">0</b></span>
+      <span class="chip">Clock <b id="clock">H1 1:30</b></span>
     </div>
 
     <div class="stage stage-560">
       <canvas id="game" width="560" height="420"></canvas>
       <div class="overlay" id="overlay">
         <h2 id="overlay-title">NEON BOWL</h2>
-        <p id="overlay-msg">Space or tap snaps the ball. Arrows / drag to run.<br>Space again throws to the open receiver, or tap a receiver.<br>Sixty seconds. Score touchdowns.</p>
+        <p id="overlay-msg"></p>
         <button class="btn" id="overlay-btn">KICKOFF</button>
       </div>
     </div>
 
-    <p class="hint">Blue line is the snap, yellow is the first-down marker. Four downs to make ten yards. P pauses.</p>
+    <div class="pad play-pad" id="pad" hidden>
+      <button class="pad-btn play-btn" data-play="bomb">1 BOMB</button>
+      <button class="pad-btn play-btn" data-play="slant">2 SLANT</button>
+      <button class="pad-btn play-btn" data-play="run">3 RUN</button>
+      <button class="pad-btn play-btn" data-play="fg">4 FIELD GOAL</button>
+      <button class="pad-btn play-btn" data-play="punt">5 PUNT</button>
+    </div>
+
+    <p class="hint" id="status">Pick a play to snap the ball.</p>
+    <p class="hint" id="season-line"></p>
+    <p class="hint">Offense: arrows or drag to run, Space or tap a receiver to throw. Defense: you're the cyan linebacker. Space stops the kick meter. P pauses.</p>
   </main>
 
   <script src="assets/arcade.js"></script>

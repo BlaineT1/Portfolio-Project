@@ -436,17 +436,26 @@ footer {
   margin: 28px 0 0;
 }
 
-.card.external .play::after { content: " ↗"; }
+/* ── Neon Bowl: play calls + standings ───────────────────────── */
 
-.card-links {
-  margin-top: auto;
-  padding-top: 12px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+.play-pad { flex-wrap: wrap; }
+
+.play-btn {
+  width: auto;
+  padding: 0 14px;
+  font-family: var(--font-arcade);
+  font-size: 0.55rem;
 }
 
-.card-links .btn { text-align: center; }
+.standings {
+  margin: 8px auto 0;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.standings td { padding: 3px 10px; color: var(--muted); text-align: left; }
+.standings td:last-child { text-align: right; font-family: var(--font-arcade); font-size: 0.65rem; }
+.standings tr.me td { color: var(--cyan); }
 
 /* ── Tic-Tac-Toe ─────────────────────────────────────────────── */
 
