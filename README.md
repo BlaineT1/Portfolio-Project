@@ -39,7 +39,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts four open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts ten open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -47,6 +47,12 @@ The hub's last section hosts four open-source games under `games/`, each wrapped
 | ⬡ Hextris | [Logan Engstrom & Garrett Finucane](https://github.com/Hextris/hextris) | GPL-3.0 |
 | 🟡 Pac-Man | [Platzh1rsch](https://github.com/platzhersh/pacman-canvas) | CC0 1.0 |
 | 🔮 Astray | [Rye Terrell](https://github.com/wwwtyro/Astray) | Unlicense |
+| 🦖 T-Rex Runner | [Chromium, extracted by wayou](https://github.com/wayou/t-rex-runner) | BSD-3-Clause |
+| 🛸 Radius Raid | [Jack Rugile](https://github.com/jackrugile/radius-raid) | MIT |
+| 🏎️ JS Racer | [Jake Gordon](https://github.com/jakesgordon/javascript-racer) | MIT |
+| ⬢ HexGL | [Thibaut Despoulain](https://github.com/BKcore/HexGL) | MIT |
+| 🕹️ Underrun | [Dominic Szablewski](https://github.com/phoboslab/underrun) | MIT |
+| 🦆 DuckHunt JS | [Matt Surabian](https://github.com/MattSurabian/DuckHunt-JS) | MIT |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 

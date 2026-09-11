@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radius Raid</title>
+    <meta
+      name="description"
+      content="Radius Raid is a space themed shoot 'em up where you must blast away unrelenting enemies before they destroy you. The game features 13 enemy types, 5 powerups, parallax backgrounds, retro sound effects, and locally stored stats."
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        align-items: center;
+        background-color: #0d0d0d;
+        cursor: crosshair;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      #wrap {
+        background: #000;
+        opacity: 0;
+        position: relative;
+        transition: opacity 1000ms;
+      }
+
+      .loaded #wrap {
+        opacity: 1;
+      }
+
+      #wrap-inner {
+        overflow: hidden;
+        position: relative;
+      }
+
+      #cbg1,
+      #cbg2,
+      #cbg3,
+      #cbg4 {
+        left: 0;
+        position: absolute;
+        top: 0;
+        pointer-events: none;
+      }
+
+      #cmg {
+        cursor: crosshair;
+        display: block;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="wrap-inner">
+        <canvas id="cbg1"></canvas>
+        <canvas id="cbg2"></canvas>
+        <canvas id="cbg3"></canvas>
+        <canvas id="cbg4"></canvas>
+        <canvas id="cmg"></canvas>
+      </div>
+    </div>
+    <script>
+      let $ = {};
+    </script>
+    <script src="js/howler.min.js?v=1"></script>
+    <script src="js/util.js?v=1"></script>
+    <script src="js/ease.js?v=1"></script>
+    <script src="js/storage.js?v=1"></script>
+    <script src="js/definitions.js?v=1"></script>
+    <script src="js/audio.js?v=1"></script>
+    <script src="js/text.js?v=1"></script>
+    <script src="js/hero.js?v=1"></script>
+    <script src="js/enemy.js?v=1"></script>
+    <script src="js/bullet.js?v=1"></script>
+    <script src="js/explosion.js?v=1"></script>
+    <script src="js/powerup.js?v=1"></script>
+    <script src="js/particle.js?v=1"></script>
+    <script src="js/particleemitter.js?v=1"></script>
+    <script src="js/textpop.js?v=1"></script>
+    <script src="js/levelpop.js?v=1"></script>
+    <script src="js/button.js?v=1"></script>
+    <script src="js/game.js?v=1"></script>
+  </body>
+</html>
