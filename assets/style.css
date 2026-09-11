@@ -196,6 +196,10 @@ footer {
 
 .card:hover .play, .card:focus-visible .play { opacity: 1; }
 
+.card.soon { opacity: 0.6; cursor: default; }
+.card.soon:hover { transform: none; box-shadow: none; border-color: var(--border); }
+.card.soon .play { display: none; }
+
 /* ── Game page layout ────────────────────────────────────────── */
 
 .top-nav {

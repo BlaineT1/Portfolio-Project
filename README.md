@@ -33,6 +33,10 @@ High scores are saved per game in your browser's localStorage — nothing leaves
 
 Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
+## Baseball card
+
+The hub has a **Baseball** card reserved for Blaine's own baseball game. To point it at the game, open `index.html`, find the block marked `BLAINE'S BASEBALL GAME`, and replace the `#` in `href="#"` with the game's link. Until then the card is greyed out and does nothing.
+
 ## More games from around the web
 
 The hub's last section hosts four open-source games under `games/`, each wrapped by `play.html` with credit to its author:
