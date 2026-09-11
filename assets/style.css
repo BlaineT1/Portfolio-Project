@@ -441,6 +441,33 @@ footer {
 .play-pad { flex-wrap: wrap; }
 .play-pad[hidden] { display: none; }
 
+.menu { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.menu[hidden] { display: none; }
+.menu-label { margin: 0; font-family: var(--font-arcade); font-size: 0.6rem; color: var(--muted); }
+.menu-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; align-items: center; }
+
+.menu-btn {
+  font-family: var(--font-arcade);
+  font-size: 0.6rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: color 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+}
+
+.menu-btn:hover { color: var(--text); border-color: var(--cyan); }
+.menu-btn.active { color: #0a0a14; background: var(--cyan); border-color: var(--cyan); }
+
+.btn-ghost {
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+}
+.btn-ghost[hidden] { display: none; }
+
 .play-btn {
   width: auto;
   padding: 0 14px;

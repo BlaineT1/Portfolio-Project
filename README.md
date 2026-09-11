@@ -27,7 +27,7 @@ A game website — 22 original browser games built with vanilla HTML, CSS, and J
 | ✌️ **Rock Paper Scissors** | Pick a hand, ride the win streak. |
 | 🧊 **Slide Puzzle** | Click tiles next to the gap (or arrow keys) to restore 1–15. |
 | 💡 **Lights Out** | Each click flips a plus-shape. Turn every light off. |
-| 🏈 **Neon Bowl** | Call plays with 1–5 (or the buttons), arrows/drag to run, Space or tap a receiver to throw, Space stops the kick meter. On defense you're the cyan linebacker. Two 90-second halves; an 8-game season with standings is saved between visits. |
+| 🏈 **Neon Bowl** | Call plays with 1–5 (or the buttons), arrows/drag to run, Space or tap a receiver to throw, Space stops the kick meter. On defense you're the cyan linebacker. Two 90-second halves; an 8-game season with standings is saved between visits. The main menu sets CPU difficulty (Rookie / Pro / All-Pro). |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 

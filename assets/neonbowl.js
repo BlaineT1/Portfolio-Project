@@ -13,6 +13,9 @@
   const seasonEl = $("season-line");
   const statusEl = $("status");
   const pad = $("pad");
+  const menu = $("menu");
+  const resetBtn = $("reset-btn");
+  const diffBtns = [...document.querySelectorAll("[data-diff]")];
 
   const W = canvas.width;
   const H = canvas.height;
@@ -23,11 +26,18 @@
   const HALF_SECONDS = Number(new URLSearchParams(location.search).get("half")) || 90;
   const SEASON_GAMES = 8;
   const SEASON_KEY = "neon-arcade-bowl-season";
-  const POCKET = 50; // frames the line holds the rush after the snap
+  const DIFFICULTY_KEY = "neon-arcade-bowl-difficulty";
+  // What the CPU difficulty changes: its defenders' speed and how long your pocket
+  // holds, its ball-carriers, passer and kicker, and how sharp your AI teammates are.
+  const DIFFICULTY = {
+    rookie: { label: "ROOKIE", defRush: 0.17, defCover: 0.165, pocket: 65, cpuPocket: 40, cpuRb: 0.215, cpuWr: 0.205, throwMin: 55, throwGap: 2.4, cpuKick: 0.25, mateRush: 0.24, mateCover: 0.21 },
+    pro:    { label: "PRO",    defRush: 0.2,  defCover: 0.185, pocket: 50, cpuPocket: 50, cpuRb: 0.235, cpuWr: 0.225, throwMin: 45, throwGap: 1.8, cpuKick: 0.4,  mateRush: 0.225, mateCover: 0.2 },
+    allpro: { label: "ALL-PRO", defRush: 0.225, defCover: 0.205, pocket: 38, cpuPocket: 60, cpuRb: 0.25, cpuWr: 0.24, throwMin: 35, throwGap: 1.4, cpuKick: 0.55, mateRush: 0.21, mateCover: 0.19 },
+  };
   const TACKLE = 1.1;
   const CATCH_GAP = 1.4;
   const PICK_GAP = 0.9;
-  const SPEED = { carrier: 0.25, rb: 0.25, user: 0.26, receiver: 0.21, rusher: 0.2, cover: 0.185, cpuRb: 0.235, cpuWr: 0.225 };
+  const SPEED = { carrier: 0.25, rb: 0.25, user: 0.26, receiver: 0.21 };
   const ORD = ["1st", "2nd", "3rd", "4th"];
   const PLAYS = ["bomb", "slant", "run", "fg", "punt"];
   const TEAMS = [
@@ -48,6 +58,19 @@
   let keys = { up: false, down: false, left: false, right: false };
   let snapTick, snapCountdown, deadTimer, message, messageTimer, camX, lastTime, raf;
   let lastCall = "slant";
+  let difficulty = DIFFICULTY[localStorage.getItem(DIFFICULTY_KEY)] ? localStorage.getItem(DIFFICULTY_KEY) : "pro";
+  let confirmReset = 0;
+
+  function D() {
+    return DIFFICULTY[difficulty];
+  }
+
+  function setDifficulty(key) {
+    difficulty = key;
+    localStorage.setItem(DIFFICULTY_KEY, key);
+    diffBtns.forEach((b) => b.classList.toggle("active", b.dataset.diff === key));
+    if (match) updateHud();
+  }
 
   /* ── Season ─────────────────────────────────────────────────── */
 
@@ -189,7 +212,7 @@
     const decision = cpuDecide();
     if (decision === "fg" || decision === "punt") return startKick(decision, true);
     off.play = decision;
-    off.cpuThrowAt = 45 + Math.floor(Math.random() * 40);
+    off.cpuThrowAt = D().throwMin + Math.floor(Math.random() * 40);
     snapCountdown = 75;
     statusEl.textContent = "CPU BALL · you're the cyan linebacker — arrows to move";
   }
@@ -217,13 +240,26 @@
     const me = season.teams[0];
     const opp = season.teams[match.opp];
     seasonEl.textContent =
-      "WEEK " + Math.min(season.week, SEASON_GAMES) + " OF " + SEASON_GAMES + " · vs " + opp.name.toUpperCase() + " · RECORD " + record(me);
+      "WEEK " + Math.min(season.week, SEASON_GAMES) + " OF " + SEASON_GAMES + " · vs " + opp.name.toUpperCase() + " · RECORD " + record(me) + " · " + D().label;
   }
 
   /* ── Flow: start, loop, overlays ────────────────────────────── */
 
+  function showMenuControls(visible) {
+    menu.hidden = !visible;
+    resetBtn.hidden = true;
+    confirmReset = 0;
+    resetBtn.textContent = "NEW SEASON";
+  }
+
   function showIntro() {
     state = "idle";
+    cancelAnimationFrame(raf);
+    pad.hidden = true;
+    showMenuControls(true);
+    setDifficulty(difficulty);
+    const me0 = season.teams[0];
+    const progressed = season.week > 1 || me0.w + me0.l + me0.t > 0;
     if (season.done) {
       const me = season.teams[0];
       overlayTitle.textContent = "SEASON OVER";
@@ -237,9 +273,12 @@
         "Week " + season.week + " of " + SEASON_GAMES + " · vs " + season.teams[opponentIndex()].name +
         "<br>Your record: " + record(me) +
         "<br><br>Two halves, four downs, seven for a touchdown, three for a field goal.";
-      overlayBtn.textContent = "KICKOFF";
+      overlayBtn.textContent = season.week > 1 ? "KICKOFF · WEEK " + season.week : "KICKOFF";
+      resetBtn.hidden = !progressed;
     }
+    statusEl.textContent = "Pick a difficulty, then kick off.";
     overlay.classList.remove("hidden");
+    draw();
   }
 
   function startGame() {
@@ -272,6 +311,7 @@
     state = "between";
     cancelAnimationFrame(raf);
     pad.hidden = true;
+    showMenuControls(false);
     overlayTitle.textContent = title;
     overlayMsg.innerHTML = html;
     overlayBtn.textContent = btn;
@@ -283,6 +323,9 @@
     if (state !== "running") return;
     state = "paused";
     cancelAnimationFrame(raf);
+    showMenuControls(false);
+    resetBtn.hidden = false;
+    resetBtn.textContent = "QUIT TO MENU";
     overlayTitle.textContent = "TIMEOUT";
     overlayMsg.textContent = "The clock is stopped.";
     overlayBtn.textContent = "RESUME";
@@ -317,7 +360,8 @@
       "YOU " + match.you + " · CPU " + match.cpu +
       (season.done ? "<br>Season over · record " + record(season.teams[0]) : "") +
       standingsHtml();
-    overlayBtn.textContent = season.done ? "NEW SEASON" : "NEXT GAME";
+    showMenuControls(false);
+    overlayBtn.textContent = "MAIN MENU";
     statusEl.textContent = "Final whistle.";
     seasonEl.textContent =
       "WEEK " + (season.week - 1) + " OF " + SEASON_GAMES + " · vs " + season.teams[match.opp].name.toUpperCase() +
@@ -385,7 +429,7 @@
     kick = { type, auto, pos: 0, dir: 1, dist: Math.round(100 - match.los + 17), t: 0, T: 50, acc: 0 };
     message = "";
     if (auto) {
-      kick.acc = Math.max(0, Math.min(1, 0.4 + Math.random() * 0.6 + cpuBonus() * 6));
+      kick.acc = Math.max(0, Math.min(1, D().cpuKick + Math.random() * 0.6 + cpuBonus() * 6));
       phase = "kickfly";
       statusEl.textContent = "CPU is " + (type === "fg" ? "trying a " + kick.dist + "-yard field goal…" : "punting…");
     } else {
@@ -507,11 +551,11 @@
       if (off.thrown) return;
       if (snapTick >= off.cpuThrowAt) {
         const best = openest();
-        if (best.gap > 1.8 || snapTick > off.cpuThrowAt + 45) throwTo(best.r);
+        if (best.gap > D().throwGap || snapTick > off.cpuThrowAt + 45) throwTo(best.r);
       }
       return;
     }
-    runAi(c, (c === off.rb ? SPEED.cpuRb : SPEED.cpuWr) * mul);
+    runAi(c, (c === off.rb ? D().cpuRb : D().cpuWr) * mul);
   }
 
   function updateReceivers() {
@@ -560,8 +604,9 @@
     const rbPastLine = c === off.rb && c.x > match.los;
     // Your AI teammates (CPU ball) are a step quicker than the CPU's defenders (your ball)
     const onD = match.poss === "cpu";
-    const rush = onD ? 0.225 : SPEED.rusher + cpuBonus();
-    const cover = onD ? 0.2 : SPEED.cover + cpuBonus();
+    const rush = onD ? D().mateRush : D().defRush + cpuBonus();
+    const cover = onD ? D().mateCover : D().defCover + cpuBonus();
+    const pocket = onD ? D().cpuPocket : D().pocket;
     for (const d of def) {
       if (d.user && onD) {
         moveByKeys(d, SPEED.user);
@@ -570,7 +615,7 @@
       }
       if (ball) steer(d, ball.to.x, ball.to.y, cover + 0.06); // break on the ball
       else if (d.cover >= 0 && !carrierIsWr && !rbPastLine) steer(d, off.wrs[d.cover].x - 2, off.wrs[d.cover].y, cover);
-      else if (d.cover < 0 && snapTick < POCKET && !rbPastLine) { d.vx = 0; d.vy = 0; } // held at the line
+      else if (d.cover < 0 && snapTick < pocket && !rbPastLine) { d.vx = 0; d.vy = 0; } // held at the line
       else steer(d, c.x + (d.x < c.x ? 3 : 0), c.y, rush); // pursue with a cut-off angle when trailing
     }
   }
@@ -854,7 +899,33 @@
 
   overlayBtn.addEventListener("click", () => {
     if (state === "paused" || state === "between") return run();
+    if (state === "over") return showIntro();
     startGame();
+  });
+
+  diffBtns.forEach((b) => b.addEventListener("click", () => {
+    setDifficulty(b.dataset.diff);
+    Sound.click();
+  }));
+
+  resetBtn.addEventListener("click", () => {
+    if (state === "paused") {
+      // Abandon the current game (it doesn't count) and go back to the menu
+      match = null;
+      newMatch();
+      return showIntro();
+    }
+    if (confirmReset === 0) {
+      confirmReset = 1;
+      resetBtn.textContent = "SURE? CLICK AGAIN";
+      setTimeout(() => { if (confirmReset === 1) { confirmReset = 0; resetBtn.textContent = "NEW SEASON"; } }, 3000);
+      return;
+    }
+    season = newSeason();
+    saveSeason();
+    newMatch();
+    Sound.point();
+    showIntro();
   });
 
   /* ── Boot ───────────────────────────────────────────────────── */

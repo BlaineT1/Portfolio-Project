@@ -29,7 +29,18 @@
       <div class="overlay" id="overlay">
         <h2 id="overlay-title">NEON BOWL</h2>
         <p id="overlay-msg"></p>
-        <button class="btn" id="overlay-btn">KICKOFF</button>
+        <div class="menu" id="menu" hidden>
+          <p class="menu-label">CPU DIFFICULTY</p>
+          <div class="menu-row" id="difficulty">
+            <button class="menu-btn" data-diff="rookie">ROOKIE</button>
+            <button class="menu-btn" data-diff="pro">PRO</button>
+            <button class="menu-btn" data-diff="allpro">ALL-PRO</button>
+          </div>
+        </div>
+        <div class="menu-row">
+          <button class="btn" id="overlay-btn">KICKOFF</button>
+          <button class="btn btn-sm btn-ghost" id="reset-btn" hidden>NEW SEASON</button>
+        </div>
       </div>
     </div>
 
