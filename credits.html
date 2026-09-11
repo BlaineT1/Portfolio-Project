@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕹️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="credits">
+    <h1 class="game-title" style="color: var(--pink)">🎬 CREDITS</h1>
+
+    <h2>THE ARCADE</h2>
+    <p>Neon Arcade is made by <a href="#" id="credits-made-by" class="made-by">Blaine</a>. Twenty-two of the games are original, written from scratch in plain HTML, CSS and JavaScript. The site has no tracking, no ads and no build step.</p>
+
+    <h2>OPEN-SOURCE GAMES</h2>
+    <p>These games were made by other people and are hosted here under their own licenses, unmodified apart from removing ad and analytics tags and fixing paths. Thank you to their authors.</p>
+    <table>
+      <tr><td>Clumsy Bird</td><td><a href="https://github.com/ellisonleao/clumsy-bird">Ellison Leão</a></td><td>GPL-3.0</td></tr>
+      <tr><td>Hextris</td><td><a href="https://github.com/Hextris/hextris">Logan Engstrom &amp; Garrett Finucane</a></td><td>GPL-3.0</td></tr>
+      <tr><td>Pac-Man</td><td><a href="https://github.com/platzhersh/pacman-canvas">Platzh1rsch</a></td><td>CC0 1.0</td></tr>
+      <tr><td>Astray</td><td><a href="https://github.com/wwwtyro/Astray">Rye Terrell</a></td><td>Unlicense</td></tr>
+      <tr><td>T-Rex Runner</td><td><a href="https://github.com/wayou/t-rex-runner">Chromium project, extracted by wayou</a></td><td>BSD-3</td></tr>
+      <tr><td>Radius Raid</td><td><a href="https://github.com/jackrugile/radius-raid">Jack Rugile</a></td><td>MIT</td></tr>
+      <tr><td>JS Racer</td><td><a href="https://github.com/jakesgordon/javascript-racer">Jake Gordon</a></td><td>MIT</td></tr>
+      <tr><td>HexGL</td><td><a href="https://github.com/BKcore/HexGL">Thibaut Despoulain</a></td><td>MIT</td></tr>
+      <tr><td>Underrun</td><td><a href="https://github.com/phoboslab/underrun">Dominic Szablewski</a></td><td>MIT</td></tr>
+    </table>
+
+    <h2>ELSEWHERE</h2>
+    <p>The Baseball card opens Google's Fourth of July 2019 Doodle on Google's own site.</p>
+
+    <h2>TYPE &amp; SOUND</h2>
+    <p>Headings use <a href="https://fonts.google.com/specimen/Press+Start+2P">Press Start 2P</a> by CodeMan38 (Open Font License). All sound effects are synthesized live with the Web Audio API.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script>
+    // Same link as the footer name
+    const cm = document.getElementById("credits-made-by");
+    if (MADE_BY_URL === "#") cm.addEventListener("click", (e) => e.preventDefault());
+    else { cm.href = MADE_BY_URL; cm.target = "_blank"; cm.rel = "noopener"; }
+  </script>
+</body>
+</html>

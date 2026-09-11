@@ -33,6 +33,10 @@ High scores are saved per game in your browser's localStorage — nothing leaves
 
 Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
+## Footer name link and credits page
+
+The footer on every page says "Made by Blaine" and links to `credits.html`. To make the name itself open a link, open `assets/arcade.js`, find the block marked `BLAINE'S LINK` at the top of the footer section, and replace the `#` in `MADE_BY_URL` with the address. Until then, clicking the name does nothing.
+
 ## Baseball card
 
 The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodle (opens on doodles.google). To point it somewhere else, open `index.html`, find the block marked `BASEBALL CARD`, and change the `href`. Setting it to `#` greys the card out and makes it inert.

@@ -133,12 +133,22 @@ const Theme = {
 
 /* ── Site footer, injected on every page ────────────────────── */
 
+// ▼▼▼ BLAINE'S LINK ▼▼▼  Paste the link you want your name to open (replace the #).
+const MADE_BY_URL = "#";
+// ▲▲▲ BLAINE'S LINK ▲▲▲
+
 (() => {
   const footer = document.createElement("footer");
+  const inCreditsPage = location.pathname.endsWith("/credits.html") || location.pathname.endsWith("credits.html");
+  const name = MADE_BY_URL === "#"
+    ? '<a href="#" class="made-by" id="made-by">Blaine</a>'
+    : '<a href="' + MADE_BY_URL + '" class="made-by" id="made-by" target="_blank" rel="noopener">Blaine</a>';
   footer.innerHTML =
-    'Made by <a href="https://github.com/BlaineT1">Blaine</a>' +
+    "Made by " + name +
+    (inCreditsPage ? "" : ' · <a href="credits.html">Credits</a>') +
     " · Built with vanilla HTML, CSS &amp; JavaScript · No tracking, no ads, just games";
   document.body.appendChild(footer);
+  if (MADE_BY_URL === "#") footer.querySelector("#made-by").addEventListener("click", (e) => e.preventDefault());
 })();
 
 /* ── Floating theme + sound buttons on every page ───────────── */
