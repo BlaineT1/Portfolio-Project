@@ -194,15 +194,15 @@
       <p class="best" data-best="neonbowl" data-best-unit="wins">Best: —</p>
     </a>
 
-    <!-- ▼▼▼ BLAINE'S BASEBALL GAME ▼▼▼
-         Paste the link to your baseball game into href="..." below, replacing the #.
-         Until then the card shows "link coming soon" and does nothing when clicked. -->
-    <a class="card" id="baseball-card" href="#" target="_blank" rel="noopener" style="--accent: var(--cyan)">
+    <!-- ▼▼▼ BASEBALL CARD ▼▼▼
+         Currently Google's Fourth of July baseball Doodle. To swap in another game,
+         change href="..." below. Set it to "#" to grey the card out again. -->
+    <a class="card" id="baseball-card" href="https://doodles.google/doodle/fourth-of-july-2019/" target="_blank" rel="noopener" style="--accent: var(--cyan)">
       <span class="play">PLAY ▸</span>
       <div class="card-icon">⚾</div>
       <h2>Baseball</h2>
-      <p>Blaine's own baseball game. Step up to the plate.</p>
-      <p class="best" id="baseball-status">Link coming soon</p>
+      <p>Google's Fourth of July Doodle: peanuts vs. hot dogs. Swing for the fences.</p>
+      <p class="best" id="baseball-status">By Google · opens in a new tab</p>
     </a>
     <!-- ▲▲▲ BLAINE'S BASEBALL GAME ▲▲▲ -->
 
@@ -249,8 +249,6 @@
     if (baseball.getAttribute("href") === "#") {
       baseball.classList.add("soon");
       baseball.addEventListener("click", (e) => e.preventDefault());
-    } else {
-      document.getElementById("baseball-status").textContent = "Made by Blaine";
     }
 
     document.querySelectorAll("[data-best]").forEach((el) => {

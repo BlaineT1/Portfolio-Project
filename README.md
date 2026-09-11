@@ -35,7 +35,7 @@ Every page has two floating buttons in the top-right corner: a **dark/light them
 
 ## Baseball card
 
-The hub has a **Baseball** card reserved for Blaine's own baseball game. To point it at the game, open `index.html`, find the block marked `BLAINE'S BASEBALL GAME`, and replace the `#` in `href="#"` with the game's link. Until then the card is greyed out and does nothing.
+The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodle (opens on doodles.google). To point it somewhere else, open `index.html`, find the block marked `BASEBALL CARD`, and change the `href`. Setting it to `#` greys the card out and makes it inert.
 
 ## More games from around the web
 
