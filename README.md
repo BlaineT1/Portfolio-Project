@@ -43,7 +43,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts nine open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts 20 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -56,6 +56,17 @@ The hub's last section hosts nine open-source games under `games/`, each wrapped
 | 🏎️ JS Racer | [Jake Gordon](https://github.com/jakesgordon/javascript-racer) | MIT |
 | ⬢ HexGL | [Thibaut Despoulain](https://github.com/BKcore/HexGL) | MIT |
 | 🕹️ Underrun | [Dominic Szablewski](https://github.com/phoboslab/underrun) | MIT |
+| 🚀 Space Huggers | [Frank Force](https://github.com/js13kGames/space-huggers) | MIT |
+| 📦 Packabunchas | [Mattia Fortunati](https://github.com/js13kGames/packabunchas) | MIT |
+| 🔥 Dante | [Salvatore Previti](https://github.com/js13kGames/dante) | MIT |
+| ⛺ Tiny Yurts | [burntcustard](https://github.com/js13kGames/tiny-yurts) | MIT |
+| 🕳️ Black Hole Square | [Quinten Clause](https://github.com/js13kGames/black-hole-square) | MIT |
+| 👻 Soul Jumper | [Tyler](https://github.com/js13kGames/soul-jumper) | ISC |
+| 👿 Infernal Throne | [Arik Wex](https://github.com/js13kGames/infernal-throne) | ISC |
+| 🪷 Pond | [Zolmeister](https://github.com/Zolmeister/pond) | MIT |
+| 🕯️ A Dark Room | [Doublespeak Games](https://github.com/doublespeakgames/adarkroom) | MIT |
+| 🟪 Custom Tetris | [Ondřej Žára](https://github.com/ondras/custom-tetris) | MIT |
+| ⚛️ Particle Clicker | [CERN Webfest team](https://github.com/particle-clicker/particle-clicker) | MIT |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 
