@@ -43,7 +43,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts 20 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts 56 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -67,6 +67,42 @@ The hub's last section hosts 20 open-source games under `games/`, each wrapped b
 | 🕯️ A Dark Room | [Doublespeak Games](https://github.com/doublespeakgames/adarkroom) | MIT |
 | 🟪 Custom Tetris | [Ondřej Žára](https://github.com/ondras/custom-tetris) | MIT |
 | ⚛️ Particle Clicker | [CERN Webfest team](https://github.com/particle-clicker/particle-clicker) | MIT |
+| 🕷️ CHOCH | [Konstantin Guschin & lampy](https://github.com/js13kGames/choch) | WTFPL |
+| ⚔️ Stolen Sword | [Ian Chiao](https://github.com/js13kGames/stolen-sword) | MIT |
+| 🛡️ The Last Spartan | [Michael Ferron](https://github.com/js13kGames/the-last-spartan) | MIT |
+| 🔷 Fourfold | [Mohammed Saud](https://github.com/js13kGames/fourfold) | MIT |
+| 🔍 I Want to Google the Game | [Mark Vasilkov](https://github.com/js13kGames/i-want-to-google-the-game) | FAFOL |
+| 🛣️ Highway 404 | [Jerome Lecomte](https://github.com/js13kGames/highway-404) | MIT |
+| 🤖 Minipunk | [Cody Ebberson](https://github.com/js13kGames/minipunk) | MIT |
+| 🏝️ Island Not Found | [Ben Clark & Salvatore Previti](https://github.com/js13kGames/island-not-found) | MIT |
+| 🏁 404 KPH | [Jeremy Burns](https://github.com/js13kGames/404kph) | MIT |
+| 🔗 Connection | [Federico Tibaldo](https://github.com/js13kGames/connection) | GPL-3.0 |
+| 🚀 Soyuz 404 | [Markus Fisch](https://github.com/js13kGames/sojuz-404) | Unlicense |
+| 🪞 Symmetry Not Found | [Pim Schreurs](https://github.com/js13kGames/symmetry-not-found) | ISC |
+| 💾 xx142-b2.exe | [Ben Clark & Salvatore Previti](https://github.com/js13kGames/xx142-b2exe) | MIT |
+| 🪃 Bounce Back | [Frank Force](https://github.com/js13kGames/bounce-back) | GPL-2.0 |
+| 🌊 Push Back | [Erik Sombroek & Lomateron](https://github.com/js13kGames/push-back) | MIT |
+| 👻 The Wandering Wraith | [Mateusz Tomczyk](https://github.com/js13kGames/the-wandering-wraith) | MIT |
+| ⛏️ Dwarfs: There and Back Again | [Mark Vasilkov](https://github.com/js13kGames/dwarfs-there-and-back-again) | MIT |
+| 🔌 Nano Wirebot | [Mariano Lambir](https://github.com/js13kGames/nano-wirebot) | ISC |
+| 📼 Play Back | [Chris Glover](https://github.com/js13kGames/play-back) | ISC |
+| 🔛 ONOFF | [Daniel Marino & Brad Dunbar](https://github.com/js13kGames/onoff) | MIT |
+| 🕶️ The Matr13k | [Giovanny Beltrán](https://github.com/js13kGames/the-matr13k) | ISC |
+| 🧊 1024 Moves | [Brégeau](https://github.com/js13kGames/1024-moves) | GPL-3.0 |
+| 🛰️ Spacecraft | [Csaba Csecskedi](https://github.com/js13kGames/spacecraft) | MIT |
+| 🪙 Off the Line | [Bryan Perfetto](https://github.com/js13kGames/off-the-line) | ISC |
+| 🪐 Exo | [Jack Oatley & Anton K.](https://github.com/js13kGames/exo) | MIT |
+| ⚓ Submersible Warship 2063 | [Jerome Lecomte](https://github.com/js13kGames/submersible-warship-2063) | MIT |
+| 👾 Evil Glitch | [Giovanny Beltrán](https://github.com/js13kGames/evil-glitch) | ISC |
+| 🚪 13th Floor | [Rob Louie](https://github.com/js13kGames/13th-floor) | MIT |
+| 🃏 Casual Crusade | [Antti Haavikko](https://github.com/js13kGames/casual-crusade) | MIT |
+| 🦊 Escape | [Michał Budzyński & Stanisław Małolepszy](https://github.com/js13kGames/escape-2021) | ISC |
+| 🔫 Q1K3 | [Dominic Szablewski](https://github.com/js13kGames/q1k3) | MIT |
+| 🏰 Super Castle Game | [Mark Vasilkov](https://github.com/js13kGames/super-castle-game) | GPL-3.0 |
+| 🪦 The Neatness | [Mark Vasilkov](https://github.com/js13kGames/the-neatness) | GPL-3.0 |
+| 🧗 LittleJS Platformer | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
+| 🧱 LittleJS Breakout | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
+| 🍬 LittleJS Match-3 | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 
