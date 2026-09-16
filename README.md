@@ -43,7 +43,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## Soundboard
 
-`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 clips live in `assets/sounds/` and the manifest in `assets/sounds.json`; the page builds a colored button per sound, and **Provoke Chaos** plays everything at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the clips themselves are third-party excerpts that belong to their owners.
+`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 clips live in `assets/sounds/` and the manifest in `assets/sounds.json`; the page builds a colored button per sound, a search box filters them by name, and **Provoke Chaos** plays everything shown at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the clips themselves are third-party excerpts that belong to their owners.
 
 ## More games from around the web
 

@@ -16,9 +16,10 @@
 
   <main class="game-shell game-shell-wide soundboard">
     <h1 class="game-title" style="color: var(--amber)">🔊 SOUNDBOARD</h1>
-    <p class="hint">Click a button to play its sound. <b>Provoke Chaos</b> plays every sound at once; <b>Stop Everything</b> (or Esc) silences them.</p>
+    <p class="hint">Click a button to play its sound. <b>Provoke Chaos</b> plays every sound shown at once; <b>Stop Everything</b> (or Esc) silences them. Type to search, or press / to jump to the search box.</p>
 
     <div class="sb-controls">
+      <input class="sb-search" id="sb-search" type="search" placeholder="Search sounds…" aria-label="Search sounds" autocomplete="off" spellcheck="false">
       <button class="btn" id="sb-chaos" type="button">PROVOKE CHAOS</button>
       <button class="btn btn-ghost" id="sb-stop" type="button">STOP EVERYTHING</button>
       <span class="sb-status" id="sb-status" role="status">LOADING…</span>
@@ -27,6 +28,7 @@
     <div class="sb-grid" id="sb-grid">
       <div class="sb-spinner" aria-label="Loading sounds"></div>
     </div>
+    <p class="sb-empty" id="sb-empty" hidden>No sounds match that search.</p>
 
     <p class="credit">Sounds and soundboard from <a href="https://github.com/v9o9/soundboard">V9o9's Online Soundboard</a> · Apache-2.0 · see <a href="credits.html">credits</a></p>
   </main>

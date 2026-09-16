@@ -885,6 +885,7 @@ footer {
 .soundboard { width: min(1100px, calc(100% - 32px)); }
 
 .sb-controls {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -968,3 +969,21 @@ footer {
   .sb-grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 12px 8px; }
   .sb-name { font-size: 0.68rem; }
 }
+
+.sb-search {
+  flex: 0 1 320px;
+  min-width: 200px;
+  max-width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+}
+.sb-search::placeholder { color: var(--muted); }
+.sb-search:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px color-mix(in srgb, var(--cyan) 25%, transparent); }
+.sb-sound[hidden] { display: none; }
+.sb-empty { margin: 24px 0; text-align: center; color: var(--muted); }
