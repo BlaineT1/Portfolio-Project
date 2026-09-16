@@ -41,6 +41,10 @@ The footer on every page says "Made by Blaine" and links to `credits.html`. To m
 
 The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodle (opens on doodles.google). To point it somewhere else, open `index.html`, find the block marked `BASEBALL CARD`, and change the `href`. Setting it to `#` greys the card out and makes it inert.
 
+## Soundboard
+
+`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 clips live in `assets/sounds/` and the manifest in `assets/sounds.json`; the page builds a colored button per sound, and **Provoke Chaos** plays everything at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the clips themselves are third-party excerpts that belong to their owners.
+
 ## More games from around the web
 
 The hub's last section hosts 56 open-source games under `games/`, each wrapped by `play.html` with credit to its author:

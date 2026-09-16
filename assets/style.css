@@ -879,3 +879,92 @@ footer {
 .t1024 { background: #f59e0b; color: #1a1a2e; font-size: clamp(0.6rem, 3vw, 0.95rem); }
 .t2048 { background: #a3ff12; color: #1a1a2e; font-size: clamp(0.6rem, 3vw, 0.95rem); box-shadow: 0 0 18px rgba(163, 255, 18, 0.5); }
 .tsuper { background: #00e5ff; color: #1a1a2e; font-size: clamp(0.6rem, 3vw, 0.95rem); box-shadow: 0 0 18px rgba(0, 229, 255, 0.5); }
+
+/* ── Soundboard (soundboard.html) ────────────────────────────── */
+
+.soundboard { width: min(1100px, calc(100% - 32px)); }
+
+.sb-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sb-status {
+  font-family: var(--font-arcade);
+  font-size: 0.55rem;
+  color: var(--muted);
+  padding: 0 6px;
+}
+
+.sb-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 14px 10px;
+}
+
+.sb-sound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.sb-btn {
+  --sb-color: #888;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--sb-color);
+  box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.sb-btn::before {
+  content: "▶";
+  font-size: 1.5rem;
+  color: #fff;
+  mix-blend-mode: difference; /* stays readable on white and black buttons alike */
+}
+
+.sb-btn:hover, .sb-btn:focus-visible { transform: translateY(-3px); box-shadow: 0 0 18px var(--sb-color); outline: none; }
+.sb-btn:active { transform: scale(0.96); }
+
+.sb-sound.playing .sb-btn {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px var(--sb-color), inset 0 0 0 999px rgba(255, 255, 255, 0.14);
+}
+.sb-sound.playing .sb-btn::before { content: "◼"; }
+
+.sb-name {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.sb-spinner {
+  grid-column: 1 / -1;
+  width: 44px;
+  height: 44px;
+  margin: 40px auto;
+  border: 4px solid var(--border);
+  border-top-color: var(--cyan);
+  border-radius: 50%;
+  animation: sb-spin 1s linear infinite;
+}
+@keyframes sb-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 480px) {
+  .sb-grid { grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 12px 8px; }
+  .sb-name { font-size: 0.68rem; }
+}

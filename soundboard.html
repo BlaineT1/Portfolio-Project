@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundboard · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell game-shell-wide soundboard">
+    <h1 class="game-title" style="color: var(--amber)">🔊 SOUNDBOARD</h1>
+    <p class="hint">Click a button to play its sound. <b>Provoke Chaos</b> plays every sound at once; <b>Stop Everything</b> (or Esc) silences them.</p>
+
+    <div class="sb-controls">
+      <button class="btn" id="sb-chaos" type="button">PROVOKE CHAOS</button>
+      <button class="btn btn-ghost" id="sb-stop" type="button">STOP EVERYTHING</button>
+      <span class="sb-status" id="sb-status" role="status">LOADING…</span>
+    </div>
+
+    <div class="sb-grid" id="sb-grid">
+      <div class="sb-spinner" aria-label="Loading sounds"></div>
+    </div>
+
+    <p class="credit">Sounds and soundboard from <a href="https://github.com/v9o9/soundboard">V9o9's Online Soundboard</a> · Apache-2.0 · see <a href="credits.html">credits</a></p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/soundboard.js"></script>
+</body>
+</html>
