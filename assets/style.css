@@ -1063,3 +1063,62 @@ footer {
 }
 .not-found .menu-row { justify-content: center; flex-wrap: wrap; }
 .not-found a.btn { display: inline-block; text-decoration: none; }
+
+/* ── Favorites ───────────────────────────────────────────────── */
+
+.card .fav-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.15s ease, transform 0.12s ease, color 0.15s ease;
+}
+.card .fav-btn:hover, .card .fav-btn:focus-visible { opacity: 1; transform: scale(1.15); border-color: var(--border); background: var(--panel); outline: none; }
+.card.is-fav .fav-btn { color: var(--amber); opacity: 1; text-shadow: 0 0 10px color-mix(in srgb, var(--amber) 70%, transparent); }
+.card.is-fav { border-color: color-mix(in srgb, var(--amber) 45%, var(--border)); }
+
+.sb-sound { position: relative; }
+.sb-fav {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(10, 10, 20, 0.55);
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s ease, transform 0.12s ease;
+}
+.sb-fav:hover, .sb-fav:focus-visible { opacity: 1; transform: scale(1.15); outline: none; }
+.sb-sound.is-fav .sb-fav { opacity: 1; color: var(--amber); text-shadow: 0 0 8px color-mix(in srgb, var(--amber) 80%, transparent); }
+.sb-key {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background: rgba(10, 10, 20, 0.7);
+  color: var(--amber);
+  font-family: var(--font-arcade);
+  font-size: 0.55rem;
+  line-height: 22px;
+  text-align: center;
+  pointer-events: none;
+}
+.sb-key[hidden] { display: none; }

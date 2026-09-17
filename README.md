@@ -31,7 +31,7 @@ A game website — 22 original browser games built with vanilla HTML, CSS, and J
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 
-The hub has a search box (press `/` to jump to it) that filters the cards by title, description, or author as you type.
+The hub has a search box (press `/` to jump to it) that filters the cards by title, description, or author as you type. The star on each card pins the game to a **Favorites** section at the top of the hub; favorites are saved in your browser.
 
 Every page has two floating buttons in the top-right corner: a **theme toggle** that cycles dark, light, and CRT (scanlines and a vignette; game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
@@ -45,7 +45,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## Soundboard
 
-`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 meme clips live in `assets/sounds/` with their manifest in `assets/sounds.json`, and eight more packs from [Kenney](https://kenney.nl) (CC0, converted to MP3) live in `assets/sounds-kenney/` with `assets/sounds-kenney.json`. The page builds a colored button per sound, pack chips switch between them, a search box filters by name, and **Provoke Chaos** plays everything shown at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the meme clips themselves are third-party excerpts that belong to their owners.
+`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 meme clips live in `assets/sounds/` with their manifest in `assets/sounds.json`, and eight more packs from [Kenney](https://kenney.nl) (CC0, converted to MP3) live in `assets/sounds-kenney/` with `assets/sounds-kenney.json`. The page builds a colored button per sound, pack chips switch between them, a search box filters by name, and **Provoke Chaos** plays everything shown at once while **Stop Everything** (or Esc) silences it. Starring a sound pins it to the **Favorites** pack, and keys 1–9 play your first nine favorites. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the meme clips themselves are third-party excerpts that belong to their owners.
 
 ## More games from around the web
 

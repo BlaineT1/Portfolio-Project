@@ -12,14 +12,15 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 ## Soundboard
 - [ ] Record your own sounds with the microphone, saved in the browser ("My sounds" pack)
 - [ ] Add an MP3 from this device without editing files
-- [ ] Favorites chip + number-key hotkeys for favorites
+- [x] Favorites chip + number-key hotkeys for favorites
 - [ ] Volume slider, "one at a time" toggle, Random button
 - [ ] Share links like `soundboard.html?play=bruh`
 - [ ] More meme clips (from MyInstants when downloads are possible)
 
 ## Games hub
 - [ ] Category chips (Action, Puzzle, Arcade, Board, 3D, Two-player) next to the search box
-- [ ] Recently played and favorites at the top of the hub
+- [x] Favorites at the top of the hub (star on each card)
+- [ ] Recently played on the hub
 - [ ] Random game button / game of the day
 - [ ] Stats page: every saved best score and trophies across the house games
 

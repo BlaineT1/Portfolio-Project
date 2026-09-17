@@ -6,7 +6,9 @@
    a second manifest adds Kenney's CC0 packs, sounds are grouped into packs you
    can switch between, a search box filters by name (Provoke Chaos then plays
    only the sounds shown), buttons show a playing state, Esc stops everything,
-   and the page uses the arcade's own styles instead of the upstream CSS. */
+   a star on each sound pins it to a Favorites pack (keys 1-9 play the first
+   nine favorites), and the page uses the arcade's own styles instead of the
+   upstream CSS. */
 
 (() => {
   // Each manifest is {sounds: [{name, color, mp3, pack?]}; mp3 paths resolve
@@ -18,7 +20,7 @@
     { url: "assets/sounds-kenney.json", pack: null, eager: false },
   ];
   const PACKS = [
-    ["all", "All"], ["memes", "Memes"], ["voice", "Voice"], ["fighter", "Fighter"],
+    ["all", "All"], ["favs", "★ Favorites"], ["memes", "Memes"], ["voice", "Voice"], ["fighter", "Fighter"],
     ["jingles", "Jingles"], ["scifi", "Sci-Fi"], ["impacts", "Impacts"],
     ["casino", "Casino"], ["rpg", "RPG"], ["retro", "Retro"],
   ];
@@ -29,8 +31,30 @@
   const emptyEl = document.getElementById("sb-empty");
   const catsEl = document.getElementById("sb-cats");
   const audioElements = {}; // name -> <audio>, same shape as upstream
-  const items = []; // { el, name, pack, src, audio, ensure } in manifest order
+  const items = []; // { el, name, pack, key, src, audio, ensure } in manifest order
   let activePack = "all";
+
+  const FAV_KEY = "neon-arcade-sound-favorites";
+  function loadFavs() {
+    try { return new Set(JSON.parse(localStorage.getItem(FAV_KEY)) || []); } catch (e) { return new Set(); }
+  }
+  const favs = loadFavs();
+  function toggleFav(it) {
+    if (favs.has(it.key)) favs.delete(it.key); else favs.add(it.key);
+    localStorage.setItem(FAV_KEY, JSON.stringify([...favs]));
+    paintFav(it);
+    updateChipCounts();
+    applyFilter();
+  }
+  function paintFav(it) {
+    const on = favs.has(it.key);
+    it.el.classList.toggle("is-fav", on);
+    it.favBtn.textContent = on ? "★" : "☆";
+    it.favBtn.title = on ? "Remove from favorites" : "Add to favorites";
+    it.favBtn.setAttribute("aria-label", it.favBtn.title);
+    it.favBtn.setAttribute("aria-pressed", String(on));
+  }
+  const favorites = () => items.filter((it) => favs.has(it.key)); // grid order; the first nine get hotkeys
 
   function setStatus(text) {
     statusEl.textContent = text;
@@ -53,7 +77,7 @@
     name.className = "sb-name";
     name.textContent = sound.name;
 
-    const it = { el: item, name: sound.name.toLowerCase(), pack, src: new URL(sound.mp3, base).href, audio: null };
+    const it = { el: item, name: sound.name.toLowerCase(), pack, key: pack + "/" + sound.name, src: new URL(sound.mp3, base).href, audio: null };
     it.ensure = () => {
       if (it.audio) return it.audio;
       const audio = document.createElement("audio");
@@ -76,21 +100,39 @@
       audio.play().catch(() => {});
     });
 
-    item.append(button, name);
+    const favBtn = document.createElement("button");
+    favBtn.type = "button";
+    favBtn.className = "sb-fav";
+    favBtn.addEventListener("click", (e) => { e.stopPropagation(); toggleFav(it); });
+    const keyBadge = document.createElement("span");
+    keyBadge.className = "sb-key";
+    keyBadge.hidden = true;
+
+    item.append(button, favBtn, keyBadge, name);
     grid.appendChild(item);
+    it.favBtn = favBtn;
+    it.keyBadge = keyBadge;
     items.push(it);
+    paintFav(it);
   }
 
   function applyFilter() {
     const q = search.value.trim().toLowerCase();
     let shown = 0;
+    const inPack = (it) => activePack === "all" || (activePack === "favs" ? favs.has(it.key) : it.pack === activePack);
     for (const it of items) {
-      const hit = (activePack === "all" || it.pack === activePack) && (!q || it.name.includes(q));
+      const hit = inPack(it) && (!q || it.name.includes(q));
       it.el.hidden = !hit;
       if (hit) shown++;
     }
+    // Hotkey badges: the first nine favorites, in grid order
+    favorites().forEach((it, i) => { it.keyBadge.hidden = i >= 9; it.keyBadge.textContent = i + 1; });
+    for (const it of items) if (!favs.has(it.key)) it.keyBadge.hidden = true;
     emptyEl.hidden = shown > 0 || items.length === 0;
-    const scope = activePack === "all" ? items.length : items.filter((it) => it.pack === activePack).length;
+    emptyEl.textContent = activePack === "favs" && !favs.size
+      ? "No favorites yet. Click ☆ on any sound to pin it here, then play the first nine with keys 1-9."
+      : "No sounds match that search.";
+    const scope = items.filter(inPack).length;
     setStatus(q ? shown + " OF " + scope + " SOUNDS" : shown + " SOUNDS");
   }
   search.addEventListener("input", applyFilter);
@@ -98,16 +140,21 @@
   function buildChips() {
     catsEl.innerHTML = "";
     for (const [key, label] of PACKS) {
-      const n = key === "all" ? items.length : items.filter((it) => it.pack === key).length;
-      if (!n) continue;
+      const n = key === "all" ? items.length : key === "favs" ? favs.size : items.filter((it) => it.pack === key).length;
+      if (!n && key !== "favs") continue;
       const chip = document.createElement("button");
       chip.type = "button";
       chip.className = "sb-chip" + (key === activePack ? " active" : "");
       chip.dataset.pack = key;
-      chip.innerHTML = label + '<span class="n">' + n + "</span>";
+      chip.innerHTML = label + '<span class="n" data-count>' + n + "</span>";
       chip.addEventListener("click", () => selectPack(key));
       catsEl.appendChild(chip);
     }
+  }
+
+  function updateChipCounts() {
+    const chip = catsEl.querySelector('.sb-chip[data-pack="favs"] [data-count]');
+    if (chip) chip.textContent = favs.size;
   }
 
   function selectPack(key) {
@@ -115,7 +162,7 @@
     catsEl.querySelectorAll(".sb-chip").forEach((c) => c.classList.toggle("active", c.dataset.pack === key));
     // Opening a pack creates and preloads its sounds so its buttons respond instantly
     if (key !== "all") {
-      for (const it of items) if (it.pack === key) it.ensure();
+      for (const it of items) if (key === "favs" ? favs.has(it.key) : it.pack === key) it.ensure();
     }
     applyFilter();
   }
@@ -179,6 +226,13 @@
     } else if (e.key === "/" && document.activeElement !== search) {
       e.preventDefault();
       search.focus();
+    } else if (/^[1-9]$/.test(e.key) && document.activeElement !== search && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      const it = favorites()[Number(e.key) - 1];
+      if (it) {
+        const audio = it.ensure();
+        audio.currentTime = 0;
+        audio.play().catch(() => {});
+      }
     }
   });
 
