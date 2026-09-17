@@ -987,3 +987,19 @@ footer {
 .sb-search:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px color-mix(in srgb, var(--cyan) 25%, transparent); }
 .sb-sound[hidden] { display: none; }
 .sb-empty { margin: 24px 0; text-align: center; color: var(--muted); }
+
+/* ── Hub search ──────────────────────────────────────────────── */
+
+.hub-search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px auto 0;
+  width: min(560px, 100%);
+}
+.hub-search .sb-search { flex: 1 1 260px; }
+.card[hidden], .section-title[hidden] { display: none; }
+.hub.filtering { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } /* keep card size when few match */
+.hub-empty { grid-column: 1 / -1; margin: 24px 0; text-align: center; color: var(--muted); }

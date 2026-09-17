@@ -31,6 +31,8 @@ A game website — 22 original browser games built with vanilla HTML, CSS, and J
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 
+The hub has a search box (press `/` to jump to it) that filters the cards by title, description, or author as you type.
+
 Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
 ## Footer name link and credits page

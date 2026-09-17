@@ -16,6 +16,10 @@
   <header class="site-header">
     <h1 class="logo">NEON ARCADE</h1>
     <p class="tagline">Pick a game. Beat your best. Scores stay in your browser.</p>
+    <div class="hub-search">
+      <input class="sb-search" id="hub-search" type="search" placeholder="Search games…" aria-label="Search games" autocomplete="off" spellcheck="false">
+      <span class="sb-status" id="hub-count" role="status"></span>
+    </div>
   </header>
 
   <main class="hub">
@@ -628,9 +632,11 @@
       <p>Roll a ball through ever-larger 3D mazes. WebGL, physics, and vertigo.</p>
       <p class="best">By Rye Terrell · public domain</p>
     </a>
+    <p class="hub-empty" id="hub-empty" hidden>No games match that search.</p>
   </main>
 
   <script src="assets/arcade.js"></script>
+  <script src="assets/hub.js"></script>
   <script>
     // The Baseball card is inert until a real link is pasted into its href
     const baseball = document.getElementById("baseball-card");
