@@ -33,7 +33,7 @@ High scores are saved per game in your browser's localStorage — nothing leaves
 
 The hub has a search box (press `/` to jump to it) that filters the cards by title, description, or author as you type.
 
-Every page has two floating buttons in the top-right corner: a **dark/light theme toggle** (game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
+Every page has two floating buttons in the top-right corner: a **theme toggle** that cycles dark, light, and CRT (scanlines and a vignette; game screens stay dark in light mode, like proper arcade cabinets) and a **sound toggle**. All sound effects are synthesized live with the Web Audio API — no audio files. Both preferences persist across visits.
 
 ## Footer name link and credits page
 
@@ -111,6 +111,13 @@ The hub's last section hosts 56 open-source games under `games/`, each wrapped b
 | 🍬 LittleJS Match-3 | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
+
+## Offline, installable, shareable
+
+- **Works offline.** `sw.js` is a service worker that caches the hub, the original games, and the shared scripts on first visit. Open-source games and sound clips are cached the first time you use them. Pages and scripts refresh in the background, so changes show up on the next load. Bump `VERSION` in `sw.js` after big changes to make every visitor's browser start from a clean cache.
+- **Installable.** `manifest.webmanifest` plus the icons in `assets/` let phones and desktops add the arcade to the home screen as an app (Share → Add to Home Screen on iPhone, the install prompt in Chrome).
+- **Link previews.** Every page carries Open Graph and Twitter tags pointing at `assets/og-image.png`, so links pasted into Discord, iMessage, or Snapchat show a card. Replace that PNG (1200×630) to change the picture.
+- **404 page.** `404.html` is what GitHub Pages shows for a missing address, with a random-game button.
 
 ## Run it locally
 

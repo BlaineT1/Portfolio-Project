@@ -114,9 +114,11 @@ const Sound = {
 
 const Theme = {
   key: "neon-arcade-theme",
+  order: ["dark", "light", "crt"], // the toggle button cycles through these
 
   current() {
-    return localStorage.getItem(this.key) || "dark";
+    const t = localStorage.getItem(this.key);
+    return this.order.includes(t) ? t : "dark";
   },
 
   apply(t) {
@@ -124,7 +126,7 @@ const Theme = {
   },
 
   toggle() {
-    const t = this.current() === "dark" ? "light" : "dark";
+    const t = this.order[(this.order.indexOf(this.current()) + 1) % this.order.length];
     localStorage.setItem(this.key, t);
     this.apply(t);
     return t;
@@ -165,9 +167,9 @@ const MADE_BY_URL = "#";
   soundBtn.id = "sound-toggle";
 
   function paint() {
-    const dark = Theme.current() === "dark";
-    themeBtn.textContent = dark ? "☀️" : "🌙";
-    themeBtn.title = dark ? "Switch to light mode" : "Switch to dark mode";
+    const next = { dark: "light", light: "crt", crt: "dark" }[Theme.current()];
+    themeBtn.textContent = { light: "☀️", crt: "📺", dark: "🌙" }[next];
+    themeBtn.title = "Switch to " + { light: "light", crt: "CRT", dark: "dark" }[next] + " mode";
     themeBtn.setAttribute("aria-label", themeBtn.title);
     const muted = Sound.isMuted();
     soundBtn.textContent = muted ? "🔇" : "🔊";
@@ -190,3 +192,12 @@ const MADE_BY_URL = "#";
   wrap.appendChild(soundBtn);
   document.body.appendChild(wrap);
 })();
+
+/* ── Offline support: register the service worker (see sw.js) ─── */
+
+if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener("load", () => {
+    // Relative, so it works at the site root and under /Portfolio-Project/ alike
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}

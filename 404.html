@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- GitHub Pages serves this page for any missing path, so point relative links at the site root
+       (which is /<repo>/ on a project site and / everywhere else). -->
+  <script>
+    (() => {
+      const parts = location.pathname.split("/");
+      const base = document.createElement("base");
+      base.href = location.hostname.endsWith("github.io") && parts[1] ? "/" + parts[1] + "/" : "/";
+      document.head.appendChild(base);
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Out of Order · Neon Arcade</title>
+  <meta name="robots" content="noindex">
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕹️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell not-found">
+    <p class="nf-code" aria-hidden="true">404</p>
+    <h1 class="game-title" style="color: var(--pink)">🕹️ OUT OF ORDER</h1>
+    <p class="hint">That cabinet isn't here. The link may be old, mistyped, or the game moved.</p>
+    <div class="menu-row">
+      <a class="btn" href="index.html">BACK TO THE ARCADE</a>
+      <button class="btn btn-ghost" id="nf-random" type="button">🎲 RANDOM GAME</button>
+    </div>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script>
+    // Pull the card list from the hub so the random pick stays in sync with it
+    document.getElementById("nf-random").addEventListener("click", async () => {
+      try {
+        const html = await (await fetch("index.html")).text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const links = [...doc.querySelectorAll("main.hub a.card[href]")]
+          .map((a) => a.getAttribute("href"))
+          .filter((h) => h && h !== "#" && !/^https?:/.test(h));
+        location.href = links[Math.floor(Math.random() * links.length)] || "index.html";
+      } catch (e) {
+        location.href = "index.html";
+      }
+    });
+  </script>
+</body>
+</html>

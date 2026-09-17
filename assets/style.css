@@ -1025,3 +1025,41 @@ footer {
 .sb-chip:hover { color: var(--text); border-color: var(--cyan); transform: translateY(-1px); }
 .sb-chip.active { color: #0a0a14; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-color: transparent; }
 .sb-chip .n { margin-left: 6px; opacity: 0.7; }
+
+/* ── CRT mode: the dark palette plus scanlines, a vignette and a little
+      color fringing on headings. Toggle cycles dark → light → CRT. ─────── */
+
+:root[data-theme="crt"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.26) 0px, rgba(0, 0, 0, 0.26) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at center, transparent 58%, rgba(0, 0, 0, 0.5) 100%);
+}
+:root[data-theme="crt"] .logo,
+:root[data-theme="crt"] .game-title,
+:root[data-theme="crt"] .section-title {
+  text-shadow: 2px 0 rgba(255, 46, 136, 0.45), -2px 0 rgba(0, 229, 255, 0.45);
+}
+:root[data-theme="crt"] .card h2 { text-shadow: 1px 0 rgba(255, 46, 136, 0.35), -1px 0 rgba(0, 229, 255, 0.35); }
+:root[data-theme="crt"] .quick-toggles { z-index: 10000; } /* stays above the scanlines */
+
+/* ── 404 page ─────────────────────────────────────────────────── */
+
+.not-found { text-align: center; padding-top: 24px; }
+.nf-code {
+  font-family: var(--font-arcade);
+  font-size: clamp(3.5rem, 18vw, 8rem);
+  margin: 0;
+  line-height: 1;
+  background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.55));
+}
+.not-found .menu-row { justify-content: center; flex-wrap: wrap; }
+.not-found a.btn { display: inline-block; text-decoration: none; }
