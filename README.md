@@ -45,7 +45,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## Soundboard
 
-`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 clips live in `assets/sounds/` and the manifest in `assets/sounds.json`; the page builds a colored button per sound, a search box filters them by name, and **Provoke Chaos** plays everything shown at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the clips themselves are third-party excerpts that belong to their owners.
+`soundboard.html` (reachable as `/soundboard` on GitHub Pages) is a port of [V9o9's Online Soundboard](https://github.com/v9o9/soundboard), Apache-2.0. The 211 meme clips live in `assets/sounds/` with their manifest in `assets/sounds.json`, and eight more packs from [Kenney](https://kenney.nl) (CC0, converted to MP3) live in `assets/sounds-kenney/` with `assets/sounds-kenney.json`. The page builds a colored button per sound, pack chips switch between them, a search box filters by name, and **Provoke Chaos** plays everything shown at once while **Stop Everything** (or Esc) silences it. To add a sound, drop an MP3 into `assets/sounds/` and add a `{ "name": …, "color": …, "mp3": "sounds/<file>.mp3" }` entry to the manifest. The upstream license is at `assets/sounds/LICENSE`; the meme clips themselves are third-party excerpts that belong to their owners.
 
 ## More games from around the web
 

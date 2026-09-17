@@ -1,0 +1,2434 @@
+{
+  "sounds": [
+    {
+      "name": "One (female)",
+      "color": "#ab4a21",
+      "mp3": "sounds-kenney/voice/female-1.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Ten (female)",
+      "color": "#c5b826",
+      "mp3": "sounds-kenney/voice/female-10.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Two (female)",
+      "color": "#d8bf31",
+      "mp3": "sounds-kenney/voice/female-2.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Three (female)",
+      "color": "#ab8d21",
+      "mp3": "sounds-kenney/voice/female-3.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Four (female)",
+      "color": "#c59826",
+      "mp3": "sounds-kenney/voice/female-4.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Five (female)",
+      "color": "#d89e31",
+      "mp3": "sounds-kenney/voice/female-5.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Six (female)",
+      "color": "#ab7221",
+      "mp3": "sounds-kenney/voice/female-6.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Seven (female)",
+      "color": "#c57826",
+      "mp3": "sounds-kenney/voice/female-7.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Eight (female)",
+      "color": "#d87c31",
+      "mp3": "sounds-kenney/voice/female-8.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Nine (female)",
+      "color": "#ab5621",
+      "mp3": "sounds-kenney/voice/female-9.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Congratulations (female)",
+      "color": "#c55826",
+      "mp3": "sounds-kenney/voice/female-congratulations.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Correct (female)",
+      "color": "#d8cd31",
+      "mp3": "sounds-kenney/voice/female-correct.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Final round (female)",
+      "color": "#ab9921",
+      "mp3": "sounds-kenney/voice/female-final-round.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Game over (female)",
+      "color": "#c5a526",
+      "mp3": "sounds-kenney/voice/female-game-over.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Go (female)",
+      "color": "#d8ab31",
+      "mp3": "sounds-kenney/voice/female-go.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Hurry up (female)",
+      "color": "#ab7d21",
+      "mp3": "sounds-kenney/voice/female-hurry-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "It's a tie (female)",
+      "color": "#c58526",
+      "mp3": "sounds-kenney/voice/female-its-a-tie.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Level (female)",
+      "color": "#d88a31",
+      "mp3": "sounds-kenney/voice/female-level.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Level up (female)",
+      "color": "#ab6121",
+      "mp3": "sounds-kenney/voice/female-level-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Mission completed (female)",
+      "color": "#c56526",
+      "mp3": "sounds-kenney/voice/female-mission-completed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Mission failed (female)",
+      "color": "#d86931",
+      "mp3": "sounds-kenney/voice/female-mission-failed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "New highscore (female)",
+      "color": "#aba421",
+      "mp3": "sounds-kenney/voice/female-new-highscore.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Objective achieved (female)",
+      "color": "#c5b226",
+      "mp3": "sounds-kenney/voice/female-objective-achieved.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Power up (female)",
+      "color": "#d8b931",
+      "mp3": "sounds-kenney/voice/female-power-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Ready (female)",
+      "color": "#ab8921",
+      "mp3": "sounds-kenney/voice/female-ready.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Round (female)",
+      "color": "#c59326",
+      "mp3": "sounds-kenney/voice/female-round.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Set (female)",
+      "color": "#d89831",
+      "mp3": "sounds-kenney/voice/female-set.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Time over (female)",
+      "color": "#ab6d21",
+      "mp3": "sounds-kenney/voice/female-time-over.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Call for backup (female)",
+      "color": "#c57326",
+      "mp3": "sounds-kenney/voice/female-war-call-for-backup.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Cover me (female)",
+      "color": "#d87731",
+      "mp3": "sounds-kenney/voice/female-war-cover-me.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Fire in the hole (female)",
+      "color": "#ab5121",
+      "mp3": "sounds-kenney/voice/female-war-fire-in-the-hole.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Get down (female)",
+      "color": "#c5c026",
+      "mp3": "sounds-kenney/voice/female-war-get-down.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Go go go (female)",
+      "color": "#d8c731",
+      "mp3": "sounds-kenney/voice/female-war-go-go-go.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Hold (female)",
+      "color": "#ab9421",
+      "mp3": "sounds-kenney/voice/female-war-hold.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Look out (female)",
+      "color": "#c5a026",
+      "mp3": "sounds-kenney/voice/female-war-look-out.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Medic (female)",
+      "color": "#d8a631",
+      "mp3": "sounds-kenney/voice/female-war-medic.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Reloading (female)",
+      "color": "#ab7821",
+      "mp3": "sounds-kenney/voice/female-war-reloading.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "RPG (female)",
+      "color": "#c58026",
+      "mp3": "sounds-kenney/voice/female-war-rpg.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Sniper (female)",
+      "color": "#d88531",
+      "mp3": "sounds-kenney/voice/female-war-sniper.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Supressing fire (female)",
+      "color": "#ab5d21",
+      "mp3": "sounds-kenney/voice/female-war-supressing-fire.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Target destroyed (female)",
+      "color": "#c56026",
+      "mp3": "sounds-kenney/voice/female-war-target-destroyed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Target engaged (female)",
+      "color": "#d86331",
+      "mp3": "sounds-kenney/voice/female-war-target-engaged.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Watch my back (female)",
+      "color": "#aba021",
+      "mp3": "sounds-kenney/voice/female-war-watch-my-back.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Wrong (female)",
+      "color": "#c5ad26",
+      "mp3": "sounds-kenney/voice/female-wrong.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "You lose (female)",
+      "color": "#d8b431",
+      "mp3": "sounds-kenney/voice/female-you-lose.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "You win (female)",
+      "color": "#ab8421",
+      "mp3": "sounds-kenney/voice/female-you-win.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "One (male)",
+      "color": "#c58d26",
+      "mp3": "sounds-kenney/voice/male-1.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Ten (male)",
+      "color": "#d89231",
+      "mp3": "sounds-kenney/voice/male-10.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Two (male)",
+      "color": "#ab6821",
+      "mp3": "sounds-kenney/voice/male-2.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Three (male)",
+      "color": "#c56d26",
+      "mp3": "sounds-kenney/voice/male-3.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Four (male)",
+      "color": "#d87131",
+      "mp3": "sounds-kenney/voice/male-4.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Five (male)",
+      "color": "#ab4d21",
+      "mp3": "sounds-kenney/voice/male-5.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Six (male)",
+      "color": "#c5ba26",
+      "mp3": "sounds-kenney/voice/male-6.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Seven (male)",
+      "color": "#d8c231",
+      "mp3": "sounds-kenney/voice/male-7.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Eight (male)",
+      "color": "#ab9021",
+      "mp3": "sounds-kenney/voice/male-8.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Nine (male)",
+      "color": "#c59b26",
+      "mp3": "sounds-kenney/voice/male-9.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Congratulations (male)",
+      "color": "#d8a031",
+      "mp3": "sounds-kenney/voice/male-congratulations.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Correct (male)",
+      "color": "#ab7421",
+      "mp3": "sounds-kenney/voice/male-correct.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Final round (male)",
+      "color": "#c57b26",
+      "mp3": "sounds-kenney/voice/male-final-round.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Game over (male)",
+      "color": "#d87f31",
+      "mp3": "sounds-kenney/voice/male-game-over.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Go (male)",
+      "color": "#ab5821",
+      "mp3": "sounds-kenney/voice/male-go.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Hold (male)",
+      "color": "#c55b26",
+      "mp3": "sounds-kenney/voice/male-hold.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Hurry up (male)",
+      "color": "#d8d031",
+      "mp3": "sounds-kenney/voice/male-hurry-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "It's a tie (male)",
+      "color": "#ab9b21",
+      "mp3": "sounds-kenney/voice/male-its-a-tie.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Level (male)",
+      "color": "#c5a826",
+      "mp3": "sounds-kenney/voice/male-level.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Level up (male)",
+      "color": "#d8ae31",
+      "mp3": "sounds-kenney/voice/male-level-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Mission completed (male)",
+      "color": "#ab7f21",
+      "mp3": "sounds-kenney/voice/male-mission-completed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Mission failed (male)",
+      "color": "#c58826",
+      "mp3": "sounds-kenney/voice/male-mission-failed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "New highscore (male)",
+      "color": "#d88d31",
+      "mp3": "sounds-kenney/voice/male-new-highscore.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Objective achieved (male)",
+      "color": "#ab6421",
+      "mp3": "sounds-kenney/voice/male-objective-achieved.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Power up (male)",
+      "color": "#c56826",
+      "mp3": "sounds-kenney/voice/male-power-up.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Ready (male)",
+      "color": "#d86c31",
+      "mp3": "sounds-kenney/voice/male-ready.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Round (male)",
+      "color": "#aba721",
+      "mp3": "sounds-kenney/voice/male-round.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Set (male)",
+      "color": "#c5b526",
+      "mp3": "sounds-kenney/voice/male-set.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Time over (male)",
+      "color": "#d8bc31",
+      "mp3": "sounds-kenney/voice/male-time-over.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Call for backup (male)",
+      "color": "#ab8b21",
+      "mp3": "sounds-kenney/voice/male-war-call-for-backup.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Cover me (male)",
+      "color": "#c59526",
+      "mp3": "sounds-kenney/voice/male-war-cover-me.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Fire in the hole (male)",
+      "color": "#d89b31",
+      "mp3": "sounds-kenney/voice/male-war-fire-in-the-hole.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Get down (male)",
+      "color": "#ab6f21",
+      "mp3": "sounds-kenney/voice/male-war-get-down.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Go go go (male)",
+      "color": "#c57526",
+      "mp3": "sounds-kenney/voice/male-war-go-go-go.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Look out (male)",
+      "color": "#d87a31",
+      "mp3": "sounds-kenney/voice/male-war-look-out.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Medic (male)",
+      "color": "#ab5421",
+      "mp3": "sounds-kenney/voice/male-war-medic.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Reloading (male)",
+      "color": "#c55526",
+      "mp3": "sounds-kenney/voice/male-war-reloading.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "RPG (male)",
+      "color": "#d8ca31",
+      "mp3": "sounds-kenney/voice/male-war-rpg.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Sniper (male)",
+      "color": "#ab9721",
+      "mp3": "sounds-kenney/voice/male-war-sniper.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Suppressing fire (male)",
+      "color": "#c5a226",
+      "mp3": "sounds-kenney/voice/male-war-suppressing-fire.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Target destroyed (male)",
+      "color": "#d8a931",
+      "mp3": "sounds-kenney/voice/male-war-target-destroyed.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Target engaged (male)",
+      "color": "#ab7b21",
+      "mp3": "sounds-kenney/voice/male-war-target-engaged.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Watch my back (male)",
+      "color": "#c58326",
+      "mp3": "sounds-kenney/voice/male-war-watch-my-back.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "Wrong (male)",
+      "color": "#d88731",
+      "mp3": "sounds-kenney/voice/male-wrong.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "You lose (male)",
+      "color": "#ab5f21",
+      "mp3": "sounds-kenney/voice/male-you-lose.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "You win (male)",
+      "color": "#c56326",
+      "mp3": "sounds-kenney/voice/male-you-win.mp3",
+      "pack": "voice"
+    },
+    {
+      "name": "One",
+      "color": "#d83158",
+      "mp3": "sounds-kenney/fighter/audio-1.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Ten",
+      "color": "#ab5621",
+      "mp3": "sounds-kenney/fighter/audio-10.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Two",
+      "color": "#c55826",
+      "mp3": "sounds-kenney/fighter/audio-2.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Three",
+      "color": "#d85b31",
+      "mp3": "sounds-kenney/fighter/audio-3.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Four",
+      "color": "#ab3a21",
+      "mp3": "sounds-kenney/fighter/audio-4.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Five",
+      "color": "#c53826",
+      "mp3": "sounds-kenney/fighter/audio-5.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Six",
+      "color": "#d83a31",
+      "mp3": "sounds-kenney/fighter/audio-6.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Seven",
+      "color": "#ab2123",
+      "mp3": "sounds-kenney/fighter/audio-7.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Eight",
+      "color": "#c52633",
+      "mp3": "sounds-kenney/fighter/audio-8.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Nine",
+      "color": "#d8314a",
+      "mp3": "sounds-kenney/fighter/audio-9.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Arcade mode",
+      "color": "#ab213f",
+      "mp3": "sounds-kenney/fighter/audio-arcade-mode.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Battle mode",
+      "color": "#c56526",
+      "mp3": "sounds-kenney/fighter/audio-battle-mode.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Begin",
+      "color": "#d86931",
+      "mp3": "sounds-kenney/fighter/audio-begin.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Championship mode",
+      "color": "#ab4621",
+      "mp3": "sounds-kenney/fighter/audio-championship-mode.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Choose your character",
+      "color": "#c54526",
+      "mp3": "sounds-kenney/fighter/audio-choose-your-character.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Combo",
+      "color": "#d84831",
+      "mp3": "sounds-kenney/fighter/audio-combo.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Combo breaker",
+      "color": "#ab2a21",
+      "mp3": "sounds-kenney/fighter/audio-combo-breaker.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Deathmatch",
+      "color": "#c52626",
+      "mp3": "sounds-kenney/fighter/audio-deathmatch.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Fight",
+      "color": "#d8313c",
+      "mp3": "sounds-kenney/fighter/audio-fight.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Final round",
+      "color": "#ab2133",
+      "mp3": "sounds-kenney/fighter/audio-final-round.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Flawless victory",
+      "color": "#c52645",
+      "mp3": "sounds-kenney/fighter/audio-flawless-victory.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Game over",
+      "color": "#d87731",
+      "mp3": "sounds-kenney/fighter/audio-game-over.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "It's a tie",
+      "color": "#ab5121",
+      "mp3": "sounds-kenney/fighter/audio-it-s-a-tie.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Kill her",
+      "color": "#c55326",
+      "mp3": "sounds-kenney/fighter/audio-kill-her.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Kill him",
+      "color": "#d85531",
+      "mp3": "sounds-kenney/fighter/audio-kill-him.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Kill it",
+      "color": "#ab3521",
+      "mp3": "sounds-kenney/fighter/audio-kill-it.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Loser",
+      "color": "#c53326",
+      "mp3": "sounds-kenney/fighter/audio-loser.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Multi kill",
+      "color": "#d83431",
+      "mp3": "sounds-kenney/fighter/audio-multi-kill.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Player 1",
+      "color": "#ab2128",
+      "mp3": "sounds-kenney/fighter/audio-player-1.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Player 2",
+      "color": "#c52638",
+      "mp3": "sounds-kenney/fighter/audio-player-2.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Prepare yourself",
+      "color": "#d83150",
+      "mp3": "sounds-kenney/fighter/audio-prepare-yourself.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Ready",
+      "color": "#ab2143",
+      "mp3": "sounds-kenney/fighter/audio-ready.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Round 1",
+      "color": "#c56026",
+      "mp3": "sounds-kenney/fighter/audio-round-1.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Round 2",
+      "color": "#d86331",
+      "mp3": "sounds-kenney/fighter/audio-round-2.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Round 3",
+      "color": "#ab4121",
+      "mp3": "sounds-kenney/fighter/audio-round-3.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Round 4",
+      "color": "#c54026",
+      "mp3": "sounds-kenney/fighter/audio-round-4.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Round 5",
+      "color": "#d84231",
+      "mp3": "sounds-kenney/fighter/audio-round-5.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Story mode",
+      "color": "#ab2521",
+      "mp3": "sounds-kenney/fighter/audio-story-mode.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Sudden death",
+      "color": "#c5262b",
+      "mp3": "sounds-kenney/fighter/audio-sudden-death.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Survival mode",
+      "color": "#d83142",
+      "mp3": "sounds-kenney/fighter/audio-survival-mode.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Tie",
+      "color": "#ab2138",
+      "mp3": "sounds-kenney/fighter/audio-tie.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Tie breaker",
+      "color": "#c5264b",
+      "mp3": "sounds-kenney/fighter/audio-tie-breaker.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Time",
+      "color": "#d87131",
+      "mp3": "sounds-kenney/fighter/audio-time.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "Winner",
+      "color": "#ab4d21",
+      "mp3": "sounds-kenney/fighter/audio-winner.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "You lose",
+      "color": "#c54d26",
+      "mp3": "sounds-kenney/fighter/audio-you-lose.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "You win",
+      "color": "#d85031",
+      "mp3": "sounds-kenney/fighter/audio-you-win.mp3",
+      "pack": "fighter"
+    },
+    {
+      "name": "8-bit jingle 1",
+      "color": "#8d21ab",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes00.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 2",
+      "color": "#9826c5",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes01.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 3",
+      "color": "#9e31d8",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes02.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 4",
+      "color": "#7221ab",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes03.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 5",
+      "color": "#7826c5",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes04.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 6",
+      "color": "#7c31d8",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes05.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 7",
+      "color": "#ab21a2",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes06.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "8-bit jingle 8",
+      "color": "#c526c5",
+      "mp3": "sounds-kenney/jingles/audio-8-bit-jingles-jingles-nes07.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 1",
+      "color": "#cd31d8",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit00.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 2",
+      "color": "#9921ab",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit01.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 3",
+      "color": "#a526c5",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit02.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 4",
+      "color": "#ab31d8",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit03.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 5",
+      "color": "#7d21ab",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit04.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 6",
+      "color": "#8526c5",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit05.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 7",
+      "color": "#8a31d8",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit06.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Hit jingle 8",
+      "color": "#6121ab",
+      "mp3": "sounds-kenney/jingles/audio-hit-jingles-jingles-hit07.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 1",
+      "color": "#c526b8",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi00.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 2",
+      "color": "#d831d5",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi01.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 3",
+      "color": "#a421ab",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi02.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 4",
+      "color": "#b226c5",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi03.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 5",
+      "color": "#b931d8",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi04.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 6",
+      "color": "#8921ab",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi05.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 7",
+      "color": "#9326c5",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi06.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Pizzicato jingle 8",
+      "color": "#9831d8",
+      "mp3": "sounds-kenney/jingles/audio-pizzicato-jingles-jingles-pizzi07.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 1",
+      "color": "#6d21ab",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax00.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 2",
+      "color": "#7326c5",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax01.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 3",
+      "color": "#7731d8",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax02.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 4",
+      "color": "#ab21a7",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax03.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 5",
+      "color": "#c026c5",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax04.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 6",
+      "color": "#c731d8",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax05.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 7",
+      "color": "#9421ab",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax06.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Sax jingle 8",
+      "color": "#a026c5",
+      "mp3": "sounds-kenney/jingles/audio-sax-jingles-jingles-sax07.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 1",
+      "color": "#a631d8",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel00.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 2",
+      "color": "#7821ab",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel01.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 3",
+      "color": "#8026c5",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel02.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 4",
+      "color": "#8531d8",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel03.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 5",
+      "color": "#5d21ab",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel04.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 6",
+      "color": "#c526bd",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel05.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 7",
+      "color": "#d531d8",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel06.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Steel jingle 8",
+      "color": "#a021ab",
+      "mp3": "sounds-kenney/jingles/audio-steel-jingles-jingles-steel07.mp3",
+      "pack": "jingles"
+    },
+    {
+      "name": "Computer noise 1",
+      "color": "#269bc5",
+      "mp3": "sounds-kenney/scifi/audio-computernoise-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Computer noise 2",
+      "color": "#31b7d8",
+      "mp3": "sounds-kenney/scifi/audio-computernoise-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Computer noise 3",
+      "color": "#2199ab",
+      "mp3": "sounds-kenney/scifi/audio-computernoise-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door close 1",
+      "color": "#26bac5",
+      "mp3": "sounds-kenney/scifi/audio-doorclose-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door close 2",
+      "color": "#31d8d8",
+      "mp3": "sounds-kenney/scifi/audio-doorclose-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door close 3",
+      "color": "#21aba2",
+      "mp3": "sounds-kenney/scifi/audio-doorclose-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door open 1",
+      "color": "#26c5b0",
+      "mp3": "sounds-kenney/scifi/audio-dooropen-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door open 2",
+      "color": "#3187d8",
+      "mp3": "sounds-kenney/scifi/audio-dooropen-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Door open 3",
+      "color": "#2172ab",
+      "mp3": "sounds-kenney/scifi/audio-dooropen-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Engine circular 1",
+      "color": "#268dc5",
+      "mp3": "sounds-kenney/scifi/audio-enginecircular-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Engine circular 2",
+      "color": "#31a9d8",
+      "mp3": "sounds-kenney/scifi/audio-enginecircular-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Engine circular 3",
+      "color": "#218dab",
+      "mp3": "sounds-kenney/scifi/audio-enginecircular-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Explosion crunch 1",
+      "color": "#26adc5",
+      "mp3": "sounds-kenney/scifi/audio-explosioncrunch-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Explosion crunch 2",
+      "color": "#31cad8",
+      "mp3": "sounds-kenney/scifi/audio-explosioncrunch-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Explosion crunch 3",
+      "color": "#21a9ab",
+      "mp3": "sounds-kenney/scifi/audio-explosioncrunch-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Force field 1",
+      "color": "#26c5bd",
+      "mp3": "sounds-kenney/scifi/audio-forcefield-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Force field 2",
+      "color": "#31d8c4",
+      "mp3": "sounds-kenney/scifi/audio-forcefield-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Force field 3",
+      "color": "#2166ab",
+      "mp3": "sounds-kenney/scifi/audio-forcefield-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Impact metal 1",
+      "color": "#2680c5",
+      "mp3": "sounds-kenney/scifi/audio-impactmetal-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Impact metal 2",
+      "color": "#319bd8",
+      "mp3": "sounds-kenney/scifi/audio-impactmetal-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Impact metal 3",
+      "color": "#2182ab",
+      "mp3": "sounds-kenney/scifi/audio-impactmetal-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser large 1",
+      "color": "#26a0c5",
+      "mp3": "sounds-kenney/scifi/audio-laserlarge-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser large 2",
+      "color": "#31bcd8",
+      "mp3": "sounds-kenney/scifi/audio-laserlarge-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser large 3",
+      "color": "#219dab",
+      "mp3": "sounds-kenney/scifi/audio-laserlarge-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser retro 1",
+      "color": "#26c0c5",
+      "mp3": "sounds-kenney/scifi/audio-laserretro-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser retro 2",
+      "color": "#31d8d2",
+      "mp3": "sounds-kenney/scifi/audio-laserretro-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser retro 3",
+      "color": "#21ab9d",
+      "mp3": "sounds-kenney/scifi/audio-laserretro-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser small 1",
+      "color": "#26c5aa",
+      "mp3": "sounds-kenney/scifi/audio-lasersmall-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser small 2",
+      "color": "#318dd8",
+      "mp3": "sounds-kenney/scifi/audio-lasersmall-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Laser small 3",
+      "color": "#2176ab",
+      "mp3": "sounds-kenney/scifi/audio-lasersmall-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Low frequency explosion 1",
+      "color": "#2693c5",
+      "mp3": "sounds-kenney/scifi/audio-lowfrequency-explosion-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Low frequency explosion 2",
+      "color": "#31aed8",
+      "mp3": "sounds-kenney/scifi/audio-lowfrequency-explosion-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Slime 1",
+      "color": "#2192ab",
+      "mp3": "sounds-kenney/scifi/audio-slime-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Slime 2",
+      "color": "#26b2c5",
+      "mp3": "sounds-kenney/scifi/audio-slime-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine large 1",
+      "color": "#31d0d8",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelarge-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine large 2",
+      "color": "#21aba9",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelarge-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine large 3",
+      "color": "#26c5b8",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelarge-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine low 1",
+      "color": "#31d8bf",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelow-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine low 2",
+      "color": "#216bab",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelow-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine low 3",
+      "color": "#2685c5",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginelow-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine small 1",
+      "color": "#31a0d8",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginesmall-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine small 2",
+      "color": "#2186ab",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginesmall-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine small 3",
+      "color": "#26a5c5",
+      "mp3": "sounds-kenney/scifi/audio-spaceenginesmall-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine 1",
+      "color": "#31c2d8",
+      "mp3": "sounds-kenney/scifi/audio-spaceengine-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine 2",
+      "color": "#21a2ab",
+      "mp3": "sounds-kenney/scifi/audio-spaceengine-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Space engine 3",
+      "color": "#26c5c5",
+      "mp3": "sounds-kenney/scifi/audio-spaceengine-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Thruster fire 1",
+      "color": "#31d8cd",
+      "mp3": "sounds-kenney/scifi/audio-thrusterfire-000.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Thruster fire 2",
+      "color": "#21ab99",
+      "mp3": "sounds-kenney/scifi/audio-thrusterfire-001.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Thruster fire 3",
+      "color": "#2678c5",
+      "mp3": "sounds-kenney/scifi/audio-thrusterfire-002.mp3",
+      "pack": "scifi"
+    },
+    {
+      "name": "Impact bell heavy 1",
+      "color": "#d8a031",
+      "mp3": "sounds-kenney/impacts/audio-impactbell-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact bell heavy 2",
+      "color": "#ab7421",
+      "mp3": "sounds-kenney/impacts/audio-impactbell-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact bell heavy 3",
+      "color": "#c57b26",
+      "mp3": "sounds-kenney/impacts/audio-impactbell-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact generic light 1",
+      "color": "#d87f31",
+      "mp3": "sounds-kenney/impacts/audio-impactgeneric-light-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact generic light 2",
+      "color": "#ab5821",
+      "mp3": "sounds-kenney/impacts/audio-impactgeneric-light-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact generic light 3",
+      "color": "#c55b26",
+      "mp3": "sounds-kenney/impacts/audio-impactgeneric-light-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass heavy 1",
+      "color": "#d85e31",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass heavy 2",
+      "color": "#ab3c21",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass heavy 3",
+      "color": "#c53b26",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass light 1",
+      "color": "#d8ae31",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-light-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass light 2",
+      "color": "#ab7f21",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-light-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass light 3",
+      "color": "#c58826",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-light-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass medium 1",
+      "color": "#d88d31",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass medium 2",
+      "color": "#ab6421",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact glass medium 3",
+      "color": "#c56826",
+      "mp3": "sounds-kenney/impacts/audio-impactglass-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal heavy 1",
+      "color": "#d86c31",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal heavy 2",
+      "color": "#ab4821",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal heavy 3",
+      "color": "#c54826",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal light 1",
+      "color": "#d84a31",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-light-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal light 2",
+      "color": "#ab2c21",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-light-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal light 3",
+      "color": "#c59526",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-light-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal medium 1",
+      "color": "#d89b31",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal medium 2",
+      "color": "#ab6f21",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact metal medium 3",
+      "color": "#c57526",
+      "mp3": "sounds-kenney/impacts/audio-impactmetal-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact mining 1",
+      "color": "#d87a31",
+      "mp3": "sounds-kenney/impacts/audio-impactmining-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact mining 2",
+      "color": "#ab5421",
+      "mp3": "sounds-kenney/impacts/audio-impactmining-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact mining 3",
+      "color": "#c55526",
+      "mp3": "sounds-kenney/impacts/audio-impactmining-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plank medium 1",
+      "color": "#d85831",
+      "mp3": "sounds-kenney/impacts/audio-impactplank-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plank medium 2",
+      "color": "#ab3821",
+      "mp3": "sounds-kenney/impacts/audio-impactplank-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plank medium 3",
+      "color": "#c53526",
+      "mp3": "sounds-kenney/impacts/audio-impactplank-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate heavy 1",
+      "color": "#d8a931",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate heavy 2",
+      "color": "#ab7b21",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate heavy 3",
+      "color": "#c58326",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate light 1",
+      "color": "#d88731",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-light-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate light 2",
+      "color": "#ab5f21",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-light-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate light 3",
+      "color": "#c56326",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-light-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate medium 1",
+      "color": "#d86631",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate medium 2",
+      "color": "#ab4321",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact plate medium 3",
+      "color": "#c54326",
+      "mp3": "sounds-kenney/impacts/audio-impactplate-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch heavy 1",
+      "color": "#d84531",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch heavy 2",
+      "color": "#ab8621",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch heavy 3",
+      "color": "#c59026",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch medium 1",
+      "color": "#d89531",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch medium 2",
+      "color": "#ab6b21",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact punch medium 3",
+      "color": "#c57026",
+      "mp3": "sounds-kenney/impacts/audio-impactpunch-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft heavy 1",
+      "color": "#d87431",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft heavy 2",
+      "color": "#ab4f21",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft heavy 3",
+      "color": "#c55026",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft medium 1",
+      "color": "#d85331",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft medium 2",
+      "color": "#ab3321",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact soft medium 3",
+      "color": "#c59d26",
+      "mp3": "sounds-kenney/impacts/audio-impactsoft-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact tin medium 1",
+      "color": "#d8a331",
+      "mp3": "sounds-kenney/impacts/audio-impacttin-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact tin medium 2",
+      "color": "#ab7621",
+      "mp3": "sounds-kenney/impacts/audio-impacttin-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact tin medium 3",
+      "color": "#c57d26",
+      "mp3": "sounds-kenney/impacts/audio-impacttin-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood heavy 1",
+      "color": "#d88231",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-heavy-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood heavy 2",
+      "color": "#ab5a21",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-heavy-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood heavy 3",
+      "color": "#c55d26",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-heavy-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood light 1",
+      "color": "#d86131",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-light-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood light 2",
+      "color": "#ab3f21",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-light-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood light 3",
+      "color": "#c53d26",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-light-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood medium 1",
+      "color": "#d83f31",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-medium-000.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood medium 2",
+      "color": "#ab8221",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-medium-001.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Impact wood medium 3",
+      "color": "#c58b26",
+      "mp3": "sounds-kenney/impacts/audio-impactwood-medium-002.mp3",
+      "pack": "impacts"
+    },
+    {
+      "name": "Card fan 1",
+      "color": "#31d882",
+      "mp3": "sounds-kenney/casino/audio-card-fan-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card fan 2",
+      "color": "#21ab5a",
+      "mp3": "sounds-kenney/casino/audio-card-fan-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card place 1",
+      "color": "#26c55d",
+      "mp3": "sounds-kenney/casino/audio-card-place-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card place 2",
+      "color": "#31d861",
+      "mp3": "sounds-kenney/casino/audio-card-place-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card place 3",
+      "color": "#21ab3f",
+      "mp3": "sounds-kenney/casino/audio-card-place-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card shove 1",
+      "color": "#26c53d",
+      "mp3": "sounds-kenney/casino/audio-card-shove-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card shove 2",
+      "color": "#31d83f",
+      "mp3": "sounds-kenney/casino/audio-card-shove-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card shove 3",
+      "color": "#21ab23",
+      "mp3": "sounds-kenney/casino/audio-card-shove-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card shuffle",
+      "color": "#26c58b",
+      "mp3": "sounds-kenney/casino/audio-card-shuffle.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card slide 1",
+      "color": "#31d890",
+      "mp3": "sounds-kenney/casino/audio-card-slide-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card slide 2",
+      "color": "#21ab66",
+      "mp3": "sounds-kenney/casino/audio-card-slide-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Card slide 3",
+      "color": "#26c56b",
+      "mp3": "sounds-kenney/casino/audio-card-slide-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Cards pack open 1",
+      "color": "#31d86e",
+      "mp3": "sounds-kenney/casino/audio-cards-pack-open-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Cards pack open 2",
+      "color": "#21ab4a",
+      "mp3": "sounds-kenney/casino/audio-cards-pack-open-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Cards pack take out 1",
+      "color": "#26c54b",
+      "mp3": "sounds-kenney/casino/audio-cards-pack-take-out-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Cards pack take out 2",
+      "color": "#31d84d",
+      "mp3": "sounds-kenney/casino/audio-cards-pack-take-out-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chip lay 1",
+      "color": "#21ab2f",
+      "mp3": "sounds-kenney/casino/audio-chip-lay-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chip lay 2",
+      "color": "#26c52b",
+      "mp3": "sounds-kenney/casino/audio-chip-lay-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chip lay 3",
+      "color": "#31d89e",
+      "mp3": "sounds-kenney/casino/audio-chip-lay-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips collide 1",
+      "color": "#21ab72",
+      "mp3": "sounds-kenney/casino/audio-chips-collide-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips collide 2",
+      "color": "#26c578",
+      "mp3": "sounds-kenney/casino/audio-chips-collide-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips collide 3",
+      "color": "#31d87c",
+      "mp3": "sounds-kenney/casino/audio-chips-collide-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips handle 1",
+      "color": "#21ab56",
+      "mp3": "sounds-kenney/casino/audio-chips-handle-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips handle 2",
+      "color": "#26c558",
+      "mp3": "sounds-kenney/casino/audio-chips-handle-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips handle 3",
+      "color": "#31d85b",
+      "mp3": "sounds-kenney/casino/audio-chips-handle-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips stack 1",
+      "color": "#21ab3a",
+      "mp3": "sounds-kenney/casino/audio-chips-stack-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips stack 2",
+      "color": "#26c538",
+      "mp3": "sounds-kenney/casino/audio-chips-stack-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Chips stack 3",
+      "color": "#31d83a",
+      "mp3": "sounds-kenney/casino/audio-chips-stack-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice grab 1",
+      "color": "#21ab7d",
+      "mp3": "sounds-kenney/casino/audio-dice-grab-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice grab 2",
+      "color": "#26c585",
+      "mp3": "sounds-kenney/casino/audio-dice-grab-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice shake 1",
+      "color": "#31d88a",
+      "mp3": "sounds-kenney/casino/audio-dice-shake-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice shake 2",
+      "color": "#21ab61",
+      "mp3": "sounds-kenney/casino/audio-dice-shake-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice shake 3",
+      "color": "#26c565",
+      "mp3": "sounds-kenney/casino/audio-dice-shake-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice throw 1",
+      "color": "#31d869",
+      "mp3": "sounds-kenney/casino/audio-dice-throw-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice throw 2",
+      "color": "#21ab46",
+      "mp3": "sounds-kenney/casino/audio-dice-throw-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Dice throw 3",
+      "color": "#26c545",
+      "mp3": "sounds-kenney/casino/audio-dice-throw-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Die throw 1",
+      "color": "#31d848",
+      "mp3": "sounds-kenney/casino/audio-die-throw-1.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Die throw 2",
+      "color": "#21ab2a",
+      "mp3": "sounds-kenney/casino/audio-die-throw-2.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Die throw 3",
+      "color": "#26c526",
+      "mp3": "sounds-kenney/casino/audio-die-throw-3.mp3",
+      "pack": "casino"
+    },
+    {
+      "name": "Belt handle 1",
+      "color": "#a9d831",
+      "mp3": "sounds-kenney/rpg/audio-belthandle1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Belt handle 2",
+      "color": "#8dab21",
+      "mp3": "sounds-kenney/rpg/audio-belthandle2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book close",
+      "color": "#adc526",
+      "mp3": "sounds-kenney/rpg/audio-bookclose.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book flip 1",
+      "color": "#cad831",
+      "mp3": "sounds-kenney/rpg/audio-bookflip1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book flip 2",
+      "color": "#a9ab21",
+      "mp3": "sounds-kenney/rpg/audio-bookflip2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book flip 3",
+      "color": "#c5bd26",
+      "mp3": "sounds-kenney/rpg/audio-bookflip3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book open",
+      "color": "#d8c431",
+      "mp3": "sounds-kenney/rpg/audio-bookopen.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book place 1",
+      "color": "#ab9221",
+      "mp3": "sounds-kenney/rpg/audio-bookplace1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book place 2",
+      "color": "#c59d26",
+      "mp3": "sounds-kenney/rpg/audio-bookplace2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Book place 3",
+      "color": "#d8a331",
+      "mp3": "sounds-kenney/rpg/audio-bookplace3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Chop",
+      "color": "#82ab21",
+      "mp3": "sounds-kenney/rpg/audio-chop.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Cloth 1",
+      "color": "#a0c526",
+      "mp3": "sounds-kenney/rpg/audio-cloth1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Cloth 2",
+      "color": "#bcd831",
+      "mp3": "sounds-kenney/rpg/audio-cloth2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Cloth 3",
+      "color": "#9dab21",
+      "mp3": "sounds-kenney/rpg/audio-cloth3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Cloth belt 1",
+      "color": "#c0c526",
+      "mp3": "sounds-kenney/rpg/audio-clothbelt.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Cloth belt 2",
+      "color": "#d8d231",
+      "mp3": "sounds-kenney/rpg/audio-clothbelt2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Creak 1",
+      "color": "#ab9d21",
+      "mp3": "sounds-kenney/rpg/audio-creak1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Creak 2",
+      "color": "#c5aa26",
+      "mp3": "sounds-kenney/rpg/audio-creak2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Creak 3",
+      "color": "#d8b131",
+      "mp3": "sounds-kenney/rpg/audio-creak3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Door close 1",
+      "color": "#ab8221",
+      "mp3": "sounds-kenney/rpg/audio-doorclose-1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Door close 2",
+      "color": "#93c526",
+      "mp3": "sounds-kenney/rpg/audio-doorclose-2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Door close 3",
+      "color": "#aed831",
+      "mp3": "sounds-kenney/rpg/audio-doorclose-3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Door open 1",
+      "color": "#92ab21",
+      "mp3": "sounds-kenney/rpg/audio-dooropen-1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Door open 2",
+      "color": "#b2c526",
+      "mp3": "sounds-kenney/rpg/audio-dooropen-2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Draw knife 1",
+      "color": "#d0d831",
+      "mp3": "sounds-kenney/rpg/audio-drawknife1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Draw knife 2",
+      "color": "#aba921",
+      "mp3": "sounds-kenney/rpg/audio-drawknife2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Draw knife 3",
+      "color": "#c5b826",
+      "mp3": "sounds-kenney/rpg/audio-drawknife3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Drop leather",
+      "color": "#d8bf31",
+      "mp3": "sounds-kenney/rpg/audio-dropleather.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Handle coins 1",
+      "color": "#ab8d21",
+      "mp3": "sounds-kenney/rpg/audio-handlecoins.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Handle coins 2",
+      "color": "#c59826",
+      "mp3": "sounds-kenney/rpg/audio-handlecoins2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Handle small leather 1",
+      "color": "#a0d831",
+      "mp3": "sounds-kenney/rpg/audio-handlesmallleather.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Handle small leather 2",
+      "color": "#86ab21",
+      "mp3": "sounds-kenney/rpg/audio-handlesmallleather2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Knife slice 1",
+      "color": "#a5c526",
+      "mp3": "sounds-kenney/rpg/audio-knifeslice.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Knife slice 2",
+      "color": "#c2d831",
+      "mp3": "sounds-kenney/rpg/audio-knifeslice2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Metal click",
+      "color": "#a2ab21",
+      "mp3": "sounds-kenney/rpg/audio-metalclick.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Metal latch",
+      "color": "#c5c526",
+      "mp3": "sounds-kenney/rpg/audio-metallatch.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Metal pot 1",
+      "color": "#d8cd31",
+      "mp3": "sounds-kenney/rpg/audio-metalpot1.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Metal pot 2",
+      "color": "#ab9921",
+      "mp3": "sounds-kenney/rpg/audio-metalpot2.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "Metal pot 3",
+      "color": "#c5a526",
+      "mp3": "sounds-kenney/rpg/audio-metalpot3.mp3",
+      "pack": "rpg"
+    },
+    {
+      "name": "High down",
+      "color": "#a3d831",
+      "mp3": "sounds-kenney/retro/audio-highdown.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "High up",
+      "color": "#89ab21",
+      "mp3": "sounds-kenney/retro/audio-highup.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Laser 1",
+      "color": "#3bc526",
+      "mp3": "sounds-kenney/retro/audio-laser1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Laser 2",
+      "color": "#53d831",
+      "mp3": "sounds-kenney/retro/audio-laser2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Laser 3",
+      "color": "#46ab21",
+      "mp3": "sounds-kenney/retro/audio-laser3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Low down",
+      "color": "#5bc526",
+      "mp3": "sounds-kenney/retro/audio-lowdown.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Low random",
+      "color": "#74d831",
+      "mp3": "sounds-kenney/retro/audio-lowrandom.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Low three tone",
+      "color": "#61ab21",
+      "mp3": "sounds-kenney/retro/audio-lowthreetone.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Pep sound 1",
+      "color": "#7bc526",
+      "mp3": "sounds-kenney/retro/audio-pepsound1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Pep sound 2",
+      "color": "#95d831",
+      "mp3": "sounds-kenney/retro/audio-pepsound2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Pep sound 3",
+      "color": "#7dab21",
+      "mp3": "sounds-kenney/retro/audio-pepsound3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phase jump 1",
+      "color": "#9bc526",
+      "mp3": "sounds-kenney/retro/audio-phasejump1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phase jump 2",
+      "color": "#45d831",
+      "mp3": "sounds-kenney/retro/audio-phasejump2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phase jump 3",
+      "color": "#3aab21",
+      "mp3": "sounds-kenney/retro/audio-phasejump3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser down 1",
+      "color": "#4dc526",
+      "mp3": "sounds-kenney/retro/audio-phaserdown1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser down 2",
+      "color": "#66d831",
+      "mp3": "sounds-kenney/retro/audio-phaserdown2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser down 3",
+      "color": "#56ab21",
+      "mp3": "sounds-kenney/retro/audio-phaserdown3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser up 1",
+      "color": "#6dc526",
+      "mp3": "sounds-kenney/retro/audio-phaserup1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser up 2",
+      "color": "#87d831",
+      "mp3": "sounds-kenney/retro/audio-phaserup2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Phaser up 3",
+      "color": "#72ab21",
+      "mp3": "sounds-kenney/retro/audio-phaserup3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Power up 1",
+      "color": "#8dc526",
+      "mp3": "sounds-kenney/retro/audio-powerup1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Power up 2",
+      "color": "#a9d831",
+      "mp3": "sounds-kenney/retro/audio-powerup10.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Power up 3",
+      "color": "#2fab21",
+      "mp3": "sounds-kenney/retro/audio-powerup11.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Space trash 1",
+      "color": "#40c526",
+      "mp3": "sounds-kenney/retro/audio-spacetrash1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Space trash 2",
+      "color": "#58d831",
+      "mp3": "sounds-kenney/retro/audio-spacetrash2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Space trash 3",
+      "color": "#4aab21",
+      "mp3": "sounds-kenney/retro/audio-spacetrash3.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Three tone 1",
+      "color": "#60c526",
+      "mp3": "sounds-kenney/retro/audio-threetone1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Three tone 2",
+      "color": "#7ad831",
+      "mp3": "sounds-kenney/retro/audio-threetone2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Tone",
+      "color": "#66ab21",
+      "mp3": "sounds-kenney/retro/audio-tone1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Two tone 1",
+      "color": "#80c526",
+      "mp3": "sounds-kenney/retro/audio-twotone1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Two tone 2",
+      "color": "#9bd831",
+      "mp3": "sounds-kenney/retro/audio-twotone2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap 1",
+      "color": "#82ab21",
+      "mp3": "sounds-kenney/retro/audio-zap1.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap 2",
+      "color": "#33c526",
+      "mp3": "sounds-kenney/retro/audio-zap2.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap three tone down",
+      "color": "#4ad831",
+      "mp3": "sounds-kenney/retro/audio-zapthreetonedown.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap three tone up",
+      "color": "#3fab21",
+      "mp3": "sounds-kenney/retro/audio-zapthreetoneup.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap two tone 1",
+      "color": "#53c526",
+      "mp3": "sounds-kenney/retro/audio-zaptwotone.mp3",
+      "pack": "retro"
+    },
+    {
+      "name": "Zap two tone 2",
+      "color": "#6cd831",
+      "mp3": "sounds-kenney/retro/audio-zaptwotone2.mp3",
+      "pack": "retro"
+    }
+  ]
+}

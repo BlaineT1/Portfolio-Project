@@ -1003,3 +1003,25 @@ footer {
 .card[hidden], .section-title[hidden] { display: none; }
 .hub.filtering { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); } /* keep card size when few match */
 .hub-empty { grid-column: 1 / -1; margin: 24px 0; text-align: center; color: var(--muted); }
+
+.sb-cats {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.sb-chip {
+  font-family: var(--font-arcade);
+  font-size: 0.55rem;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+}
+.sb-chip:hover { color: var(--text); border-color: var(--cyan); transform: translateY(-1px); }
+.sb-chip.active { color: #0a0a14; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-color: transparent; }
+.sb-chip .n { margin-left: 6px; opacity: 0.7; }
