@@ -6,7 +6,7 @@
      is there; pages and scripts are refreshed in the background.
    Bump VERSION to make every visitor pick up a fresh copy of everything. */
 
-const VERSION = "2026-09-17";
+const VERSION = "2026-09-18";
 const CACHE = "neon-arcade-" + VERSION;
 const PRECACHE = [
   "./",
@@ -15,10 +15,12 @@ const PRECACHE = [
   "./aim.html",
   "./asteroids.html",
   "./breakout.html",
+  "./chess.html",
   "./connect4.html",
   "./credits.html",
   "./flappy.html",
   "./froggy.html",
+  "./hangman.html",
   "./index.html",
   "./invaders.html",
   "./jump.html",
@@ -32,7 +34,10 @@ const PRECACHE = [
   "./simon.html",
   "./slide.html",
   "./snake.html",
+  "./sokoban.html",
+  "./solitaire.html",
   "./soundboard.html",
+  "./sudoku.html",
   "./tetris.html",
   "./tictactoe.html",
   "./whack.html",
@@ -43,9 +48,11 @@ const PRECACHE = [
   "./assets/arcade.js",
   "./assets/asteroids.js",
   "./assets/breakout.js",
+  "./assets/chess.js",
   "./assets/connect4.js",
   "./assets/flappy.js",
   "./assets/froggy.js",
+  "./assets/hangman.js",
   "./assets/hub.js",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
@@ -61,10 +68,13 @@ const PRECACHE = [
   "./assets/simon.js",
   "./assets/slide.js",
   "./assets/snake.js",
+  "./assets/sokoban.js",
+  "./assets/solitaire.js",
   "./assets/soundboard.js",
   "./assets/sounds-kenney.json",
   "./assets/sounds.json",
   "./assets/style.css",
+  "./assets/sudoku.js",
   "./assets/tetris.js",
   "./assets/ttt.js",
   "./assets/whack.js",

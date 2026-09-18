@@ -1,6 +1,6 @@
 # 🕹️ Neon Arcade
 
-A game website — 22 original browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
+A game website — 27 original browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
 ## Games
 
@@ -28,6 +28,11 @@ A game website — 22 original browser games built with vanilla HTML, CSS, and J
 | 🧊 **Slide Puzzle** | Click tiles next to the gap (or arrow keys) to restore 1–15. |
 | 💡 **Lights Out** | Each click flips a plus-shape. Turn every light off. |
 | 🏈 **Neon Bowl** | Call plays with 1–5 (or the buttons), arrows/drag to run, Space or tap a receiver to throw, Space stops the kick meter. On defense you're the cyan linebacker. Two 90-second halves; an 8-game season with standings is saved between visits. The main menu sets CPU difficulty (Rookie / Pro / All-Pro). |
+| ♟️ **Chess** | Click a piece, then a square. Easy / Normal / Hard CPU; Undo takes back a full turn. |
+| ♠️ **Solitaire** | Klondike, draw one. Click a card then its destination, click twice for a foundation, or drag. Z undoes. |
+| 🧮 **Sudoku** | Type or tap numbers, N for notes, arrows to move. Every puzzle has one solution. Best time is saved. |
+| 📦 **Sokoban** | Arrows / WASD / swipe to push crates onto targets. Z undoes, R restarts. 12 levels. |
+| ✏️ **Hangman** | Type or tap letters. Six misses and it's over; win streaks are the score. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 

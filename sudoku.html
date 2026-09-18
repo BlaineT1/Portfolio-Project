@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Sudoku with a built-in generator: every puzzle has one solution. Notes, hints, and a timer. Free in your browser at Neon Arcade.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Sudoku · Neon Arcade">
+  <meta property="og:description" content="Sudoku with a built-in generator: every puzzle has one solution. Notes, hints, and a timer. Free in your browser at Neon Arcade.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/sudoku.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Sudoku · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--cyan)">🧮 SUDOKU</h1>
+
+    <div class="scorebar">
+      <span class="chip">Time <b id="time">0:00</b></span>
+      <span class="chip">Filled <b id="clues">0/81</b></span>
+      <span class="chip">Best <b id="best">—</b></span>
+    </div>
+
+    <div class="stage stage-480">
+      <div class="sudoku-board" id="board" aria-label="Sudoku grid"></div>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">SOLVED!</h2>
+        <p id="overlay-msg"></p>
+        <button class="btn" id="overlay-btn">NEW PUZZLE</button>
+      </div>
+    </div>
+
+    <div class="menu-row" id="difficulty">
+      <button class="menu-btn" data-diff="easy">EASY</button>
+      <button class="menu-btn" data-diff="medium">MEDIUM</button>
+      <button class="menu-btn" data-diff="hard">HARD</button>
+    </div>
+    <div class="su-pad" id="pad"></div>
+    <div class="menu-row">
+      <button class="btn btn-sm btn-ghost" id="notes-btn">✎ NOTES</button>
+      <button class="btn btn-sm btn-ghost" id="hint-btn">💡 HINT</button>
+      <button class="btn btn-sm" id="new-btn">NEW PUZZLE</button>
+    </div>
+
+    <p class="hint">Every puzzle has exactly one solution. Type numbers or tap the pad, N toggles notes, arrows move around. Conflicts turn red. Hints don't count toward best times.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/sudoku.js"></script>
+</body>
+</html>

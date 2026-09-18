@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Hangman with categories and an on-screen keyboard. Six misses and it's over. Free in your browser at Neon Arcade.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Hangman · Neon Arcade">
+  <meta property="og:description" content="Hangman with categories and an on-screen keyboard. Six misses and it's over. Free in your browser at Neon Arcade.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/hangman.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Hangman · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--pink)">✏️ HANGMAN</h1>
+
+    <div class="scorebar">
+      <span class="chip">Streak <b id="streak">0</b></span>
+      <span class="chip">Wrong <b id="wrong">0/6</b></span>
+      <span class="chip">Best <b id="best">—</b></span>
+    </div>
+
+    <div class="stage stage-420 hang-stage">
+      <svg class="hang-figure" id="figure" viewBox="0 0 200 220" aria-hidden="true">
+        <line class="frame" x1="20" y1="210" x2="120" y2="210"/>
+        <line class="frame" x1="40" y1="210" x2="40" y2="20"/>
+        <line class="frame" x1="40" y1="20" x2="130" y2="20"/>
+        <line class="frame" x1="130" y1="20" x2="130" y2="45"/>
+        <circle class="part" cx="130" cy="62" r="17"/>
+        <line class="part" x1="130" y1="79" x2="130" y2="140"/>
+        <line class="part" x1="130" y1="95" x2="100" y2="122"/>
+        <line class="part" x1="130" y1="95" x2="160" y2="122"/>
+        <line class="part" x1="130" y1="140" x2="105" y2="182"/>
+        <line class="part" x1="130" y1="140" x2="155" y2="182"/>
+      </svg>
+      <p class="hang-cat" id="category"></p>
+      <div class="hang-word" id="word" aria-live="polite"></div>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">YOU GOT IT!</h2>
+        <p id="overlay-msg"></p>
+        <button class="btn" id="overlay-btn">NEXT WORD</button>
+      </div>
+    </div>
+
+    <div class="kb" id="keyboard"></div>
+    <button class="btn btn-sm btn-ghost" id="new-btn">NEW WORD</button>
+
+    <p class="hint">Guess the word one letter at a time; the category is your clue. Six wrong guesses and the figure is complete. Type on a keyboard or tap the keys.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/hangman.js"></script>
+</body>
+</html>

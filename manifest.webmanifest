@@ -1,7 +1,7 @@
 {
   "name": "Neon Arcade",
   "short_name": "Neon Arcade",
-  "description": "80+ free browser games and a 600-sound soundboard. No ads, no tracking.",
+  "description": "100+ free browser games and a 600-sound soundboard. No ads, no tracking.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -26,15 +26,13 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 
 ## New original games
 
-Drafted (scripts in `drafts/`, need pages + styles + tests): Chess, Solitaire, Sudoku, Sokoban, Hangman.
-
-- [ ] Chess against a CPU (drafted)
+- [x] Chess against a CPU
 - [ ] Checkers
-- [ ] Solitaire (drafted)
-- [ ] Sudoku (drafted)
-- [ ] Sokoban (drafted)
+- [x] Solitaire
+- [x] Sudoku
+- [x] Sokoban
 - [ ] Nonograms
-- [ ] Hangman (drafted)
+- [x] Hangman
 - [ ] Typing test, reaction-time test
 - [ ] Tower defense
 - [ ] Local two-player Pong / tank battle

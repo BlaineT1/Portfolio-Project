@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Chess against a CPU with three difficulty levels, full rules, and undo. Free in your browser at Neon Arcade.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Chess · Neon Arcade">
+  <meta property="og:description" content="Chess against a CPU with three difficulty levels, full rules, and undo. Free in your browser at Neon Arcade.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/chess.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Chess · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♟️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--purple)">♟️ CHESS</h1>
+
+    <div class="scorebar">
+      <span class="chip">You <b id="wins">0</b></span>
+      <span class="chip">CPU <b id="losses">0</b></span>
+      <span class="chip">Status <b id="status">Your move</b></span>
+    </div>
+
+    <div class="stage stage-480">
+      <div class="chess-board" id="board" aria-label="Chess board"></div>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">CHECKMATE!</h2>
+        <p id="overlay-msg"></p>
+        <button class="btn" id="overlay-btn">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <div class="menu-row" id="difficulty">
+      <button class="menu-btn" data-diff="easy">EASY</button>
+      <button class="menu-btn" data-diff="normal">NORMAL</button>
+      <button class="menu-btn" data-diff="hard">HARD</button>
+    </div>
+    <div class="menu-row">
+      <button class="btn btn-sm" id="new-btn">NEW GAME</button>
+      <button class="btn btn-sm btn-ghost" id="undo-btn">UNDO</button>
+    </div>
+
+    <p class="hint">You're white. Click a piece, then a highlighted square. Castling, en passant and promotion (to a queen) all work. Undo takes back a full turn.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/chess.js"></script>
+</body>
+</html>
