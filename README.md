@@ -54,7 +54,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts 78 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts 94 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -136,6 +136,22 @@ The hub's last section hosts 78 open-source games under `games/`, each wrapped b
 | 🛣️ Road Blocks | [Ash Kyd](https://github.com/js13kGames/road-blocks) | BSD |
 | 📦 Sobanko | [fatfisz](https://github.com/js13kGames/sobanko) | MIT |
 | ⏪ Anti-Paradox Run | [fatfisz](https://github.com/js13kGames/anti-paradox-run) | MIT |
+| 🔺 Triangle: Back To Home | [Viktor Uhryn](https://github.com/js13kGames/triangle-back-to-home) | ISC |
+| 🪝 Wander | [razh](https://github.com/js13kGames/wander) | MIT |
+| 🌈 Offline Paradise | [Pim Schreurs](https://github.com/js13kGames/offline-paradise) | ISC |
+| 🧙 VIER: Wizard Wars | [Giovanny Beltrán](https://github.com/js13kGames/vier-wizard-wars) | MIT |
+| 🐱 Planet Figadore Has Gone Offline | [Jasper Renow-Clarke](https://github.com/js13kGames/planet-figadore-has-gone-offline) | MIT |
+| 🕸️ Enmeshed | [Mark Barr](https://github.com/js13kGames/enmeshed) | MIT |
+| 🐦‍⬛ Raven | [Elliot Nelson](https://github.com/js13kGames/raven) | ISC |
+| 🤠 Backcountry | [Michał Budzyński & Stanisław Małolepszy](https://github.com/js13kGames/backcountry) | ISC |
+| 🌊 Elematter | [Jack Rugile](https://github.com/js13kGames/elematter) | MIT |
+| 🤖 Lost Robot | [Dennis Meckel](https://github.com/js13kGames/lost-robot) | MIT |
+| 🛰️ SpacePi | [Jack Rugile](https://github.com/js13kGames/spacepi) | MIT |
+| 🚀 Captain Callisto | [Cody Ebberson](https://github.com/js13kGames/the-adventures-of-captain-callisto) | MIT |
+| 🛸 SYNTHBLAST | [Brian Risk](https://github.com/brianrisk/SYNTHBLAST-threejs-game) | Apache-2.0 |
+| ⌨️ Word Pluck | [Kailash Nadh](https://github.com/knadh/wordpluck) | MIT |
+| 🍺 Drunken Viking | [Cong Xu](https://github.com/cxong/DrunkenViking) | MIT |
+| ⚔️ Dungeon Crawler RPG | [Red Pangilinan](https://github.com/redpangilinan/dungeon-crawler-rpg-od) | GPL-3.0 |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 
