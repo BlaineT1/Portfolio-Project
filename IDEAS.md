@@ -25,19 +25,23 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 - [ ] Stats page: every saved best score and trophies across the house games
 
 ## New original games
-- [ ] Chess against a CPU
+
+Drafted (scripts in `drafts/`, need pages + styles + tests): Chess, Solitaire, Sudoku, Sokoban, Hangman.
+
+- [ ] Chess against a CPU (drafted)
 - [ ] Checkers
-- [ ] Solitaire
-- [ ] Sudoku
-- [ ] Sokoban
+- [ ] Solitaire (drafted)
+- [ ] Sudoku (drafted)
+- [ ] Sokoban (drafted)
 - [ ] Nonograms
-- [ ] Hangman
+- [ ] Hangman (drafted)
 - [ ] Typing test, reaction-time test
 - [ ] Tower defense
 - [ ] Local two-player Pong / tank battle
 
 ## More open-source games
-- [ ] js13kGames 2015 and 2017 winners, other jams (license check first)
+- [x] js13kGames 2015, 2017, 2024 and 2025 entries (22 added)
+- [ ] Other jams (Ludum Dare web entries, Gamedev.js Jam) with a license check first
 
 ## Waiting on Blaine
 - [ ] The baseball game for the Baseball card (`index.html`, block marked `BASEBALL CARD`)

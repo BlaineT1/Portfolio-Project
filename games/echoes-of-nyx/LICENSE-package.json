@@ -1,0 +1,72 @@
+{
+  "name": "echoes-of-nyx",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc  && vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "js13k-vite-plugins": "^0.4.0",
+    "minimatch": "^10.0.3",
+    "prettier": "^3.6.2",
+    "terser": "^5.43.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.2"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "no-case-declarations": "off",
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        {
+          "allowExpressions": true
+        }
+      ],
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-types": "off",
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_"
+        }
+      ],
+      "prefer-promise-reject-errors": "error"
+    },
+    "ignorePatterns": [
+      "dist",
+      "node_modules",
+      "**/*.js",
+      "vite.config.ts"
+    ]
+  }
+}

@@ -49,7 +49,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts 56 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts 78 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -109,6 +109,28 @@ The hub's last section hosts 56 open-source games under `games/`, each wrapped b
 | 🧗 LittleJS Platformer | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
 | 🧱 LittleJS Breakout | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
 | 🍬 LittleJS Match-3 | [Frank Force](https://github.com/KilledByAPixel/LittleJS) | MIT |
+| 🐈‍⬛ Witchcat | [Jonathan Vallet & Lylouf](https://github.com/js13kGames/witchcat) | MIT |
+| 🧮 Catculus | [Antti Haavikko](https://github.com/js13kGames/catculus) | MIT |
+| 🐱 Non-Mewtonian Cat | [Mohammed Saud](https://github.com/js13kGames/non-mewtonian-cat) | GPL-3.0 |
+| 🧙 Whiskers Witch Adventure | [Rob Louie](https://github.com/js13kGames/whiskers-witch-adventure) | MIT |
+| 🐟 Kuro Neko Market | [Federico Tibaldo](https://github.com/js13kGames/kuro-neko-market) | GPL-3.0 |
+| 🌙 Echoes of Nyx | [Corentin Pillet](https://github.com/js13kGames/echoes-of-nyx) | MIT |
+| 🏴‍☠️ Coup Ahoo | [Antti Haavikko](https://github.com/js13kGames/coup-ahoo) | MIT |
+| 🚩 13 Steps to Escape | [Jonathan Vallet](https://github.com/js13kGames/13-steps-to-escape) | MIT |
+| 🧪 Brewing Disaster | [Adrien Guéret](https://github.com/js13kGames/brewing-disaster) | Apache-2.0 |
+| 👻 Phantomicus | [Cody Ebberson](https://github.com/js13kGames/phantomicus) | MIT |
+| 🚀 Aargh! Triskaideka Attacks! | [Christoph Schansky](https://github.com/js13kGames/aargh-triskaideka-attacks) | MIT |
+| 🤖 Greeble | [Ryan Malm](https://github.com/js13kGames/greeble) | MIT |
+| 🏝️ Forgotten Island | [Wrong Way Wonders](https://github.com/js13kGames/forgotten-island) | MIT |
+| ⛏️ Forsaken | [David Brad](https://github.com/js13kGames/forsaken) | MIT |
+| 🐜 Anthority | [Bruno Croci](https://github.com/js13kGames/anthority) | ISC |
+| 🐚 Vendredi | [Jean Simard](https://github.com/js13kGames/vendredi) | GPL-3.0 |
+| 🧟 Pandemia | [Wil Alvarez](https://github.com/js13kGames/pandemia) | MIT |
+| 🕹️ Behind Asteroids | [Gaëtan Renaudeau](https://github.com/js13kGames/behind-asteroids-the-dark-side) | ISC |
+| ⛳ Gravity Golf | [Katherine Stark](https://github.com/js13kGames/gravity-golf) | MIT |
+| 🛣️ Road Blocks | [Ash Kyd](https://github.com/js13kGames/road-blocks) | BSD |
+| 📦 Sobanko | [fatfisz](https://github.com/js13kGames/sobanko) | MIT |
+| ⏪ Anti-Paradox Run | [fatfisz](https://github.com/js13kGames/anti-paradox-run) | MIT |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 
