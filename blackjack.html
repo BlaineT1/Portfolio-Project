@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Blackjack against the dealer: hit, stand, double, split. Blackjack pays 3:2. Free in your browser at Neon Arcade, no real money.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Blackjack · Neon Arcade">
+  <meta property="og:description" content="Blackjack against the dealer: hit, stand, double, split. Blackjack pays 3:2. Free in your browser at Neon Arcade, no real money.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/blackjack.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Blackjack · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🃏</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell game-shell-wide">
+    <h1 class="game-title" style="color: var(--lime)">🃏 BLACKJACK</h1>
+
+    <div class="scorebar">
+      <span class="chip">Bankroll <b id="bankroll">$500</b></span>
+      <span class="chip">Bet <b id="bet">$0</b></span>
+      <span class="chip">Best <b id="best">—</b></span>
+    </div>
+
+    <div class="stage stage-560 bj-stage">
+      <div class="bj-table">
+        <div class="bj-zone">
+          <p class="bj-hand-label">DEALER <span id="dealer-total"></span></p>
+          <div class="bj-row" id="dealer-hand"></div>
+        </div>
+        <p class="bj-result" id="result"></p>
+        <div class="bj-hands" id="player-hands"></div>
+      </div>
+      <div class="overlay hidden" id="overlay">
+        <h2 id="overlay-title">OUT OF CHIPS</h2>
+        <p id="overlay-msg"></p>
+        <button class="btn" id="overlay-btn">NEW BANKROLL ($500)</button>
+      </div>
+    </div>
+
+    <div class="bj-chips" id="chips"></div>
+    <div class="menu-row">
+      <button class="btn btn-sm btn-ghost" id="clear-bet-btn" disabled>CLEAR BET</button>
+      <button class="btn btn-sm" id="deal-btn" disabled>DEAL</button>
+    </div>
+    <div class="menu-row">
+      <button class="btn btn-sm" id="hit-btn" disabled>HIT</button>
+      <button class="btn btn-sm" id="stand-btn" disabled>STAND</button>
+      <button class="btn btn-sm btn-ghost" id="double-btn" disabled>DOUBLE</button>
+      <button class="btn btn-sm btn-ghost" id="split-btn" disabled>SPLIT</button>
+    </div>
+
+    <p class="hint">Pick chips to build a bet, then Deal. Dealer stands on all 17s. Blackjack pays 3:2. H hits, S stands. No real money, ever.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/blackjack.js"></script>
+</body>
+</html>

@@ -250,6 +250,38 @@
       <p class="best" data-best="hangman" data-best-unit="streak">Best: —</p>
     </a>
 
+    <a class="card" href="missilecommand.html" style="--accent: var(--orange)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">💥</div>
+      <h2>Missile Command</h2>
+      <p>Click or tap to fire interceptors and protect six cities from an endless, escalating sky.</p>
+      <p class="best" data-best="missilecommand">Best: —</p>
+    </a>
+
+    <a class="card" href="blackjack.html" style="--accent: var(--lime)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🃏</div>
+      <h2>Blackjack</h2>
+      <p>Hit, stand, double, split. Blackjack pays 3:2, dealer stands on 17. No real money, just bragging rights.</p>
+      <p class="best" data-best="blackjack" data-best-money="1">Best: —</p>
+    </a>
+
+    <a class="card" href="freecell.html" style="--accent: var(--cyan)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">♣️</div>
+      <h2>FreeCell</h2>
+      <p>Every card deals face up. Four free cells, eight columns, and supermoves for the cards you can see coming.</p>
+      <p class="best" data-best="freecell" data-best-unit="moves" data-best-lower="1">Best: —</p>
+    </a>
+
+    <a class="card" href="airhockey.html" style="--accent: var(--pink)">
+      <span class="play">PLAY ▸</span>
+      <div class="card-icon">🏒</div>
+      <h2>Air Hockey</h2>
+      <p>Two players, one keyboard. Cyan is WASD, Pink is the arrow keys. First to 7 wins the match.</p>
+      <p class="best">Local two-player · WASD vs. arrows</p>
+    </a>
+
     <!-- ▼▼▼ BASEBALL CARD ▼▼▼
          Currently Google's Fourth of July baseball Doodle. To swap in another game,
          change href="..." below. Set it to "#" to grey the card out again. -->
@@ -969,6 +1001,8 @@
       if (el.dataset.bestTime) {
         el.textContent =
           "Best: " + Math.floor(best / 60) + ":" + String(best % 60).padStart(2, "0");
+      } else if (el.dataset.bestMoney) {
+        el.textContent = "Best: $" + best;
       } else {
         const unit = el.dataset.bestUnit ? " " + el.dataset.bestUnit : "";
         el.textContent = "Best: " + best + unit;

@@ -6,19 +6,22 @@
      is there; pages and scripts are refreshed in the background.
    Bump VERSION to make every visitor pick up a fresh copy of everything. */
 
-const VERSION = "2026-09-18";
+const VERSION = "2026-09-22";
 const CACHE = "neon-arcade-" + VERSION;
 const PRECACHE = [
   "./",
   "./2048.html",
   "./404.html",
   "./aim.html",
+  "./airhockey.html",
   "./asteroids.html",
+  "./blackjack.html",
   "./breakout.html",
   "./chess.html",
   "./connect4.html",
   "./credits.html",
   "./flappy.html",
+  "./freecell.html",
   "./froggy.html",
   "./hangman.html",
   "./index.html",
@@ -27,6 +30,7 @@ const PRECACHE = [
   "./lights.html",
   "./memory.html",
   "./minesweeper.html",
+  "./missilecommand.html",
   "./neonbowl.html",
   "./play.html",
   "./pong.html",
@@ -44,13 +48,16 @@ const PRECACHE = [
   "./word.html",
   "./assets/2048.js",
   "./assets/aim.js",
+  "./assets/airhockey.js",
   "./assets/apple-touch-icon.png",
   "./assets/arcade.js",
   "./assets/asteroids.js",
+  "./assets/blackjack.js",
   "./assets/breakout.js",
   "./assets/chess.js",
   "./assets/connect4.js",
   "./assets/flappy.js",
+  "./assets/freecell.js",
   "./assets/froggy.js",
   "./assets/hangman.js",
   "./assets/hub.js",
@@ -61,7 +68,9 @@ const PRECACHE = [
   "./assets/lights.js",
   "./assets/memory.js",
   "./assets/mines.js",
+  "./assets/missilecommand.js",
   "./assets/neonbowl.js",
+  "./assets/og-image.png",
   "./assets/play.js",
   "./assets/pong.js",
   "./assets/rps.js",

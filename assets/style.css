@@ -1242,3 +1242,80 @@ footer {
 .hang-letter.miss { color: var(--pink); }
 .kb-key.miss { background: #5b1f2b; color: #fff; border-color: #8a2f42; }
 .kb-key:disabled { cursor: default; }
+
+/* ── Missile Command ─────────────────────────────────────────── */
+
+.mc-stage canvas { cursor: crosshair; }
+
+/* ── Air Hockey ──────────────────────────────────────────────── */
+/* Shares .stage/.stage-560 canvas sizing; no extra rules needed. */
+
+/* ── Blackjack ───────────────────────────────────────────────── */
+
+.bj-stage { padding: 18px; overflow: visible; }
+.bj-table { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+.bj-zone { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.bj-hand-label {
+  margin: 0;
+  font-family: var(--font-arcade);
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+.bj-hand-label span { color: var(--cyan); }
+.bj-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; min-height: 92px; }
+.bj-card {
+  width: 62px;
+  height: 88px;
+  border-radius: 8px;
+  background: #f8f8ff;
+  color: #141428;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.bj-card.red { color: #d1263c; }
+.bj-card.down { background: repeating-linear-gradient(45deg, #2c2c52 0 4px, #1c1c38 4px 8px); border: 2px solid #4a4a80; }
+.bj-suit { align-self: flex-end; font-size: 1.3em; }
+.bj-hands { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; }
+.bj-hand { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; border-radius: 10px; }
+.bj-hand.active { box-shadow: 0 0 0 2px var(--cyan); }
+.bj-total { margin: 0; font-family: var(--font-arcade); font-size: 0.75rem; color: var(--text); }
+.bj-result { min-height: 1.4em; margin: 0; text-align: center; font-family: var(--font-arcade); font-size: 0.7rem; }
+.bj-result.win { color: var(--lime); }
+.bj-result.lose { color: var(--pink); }
+.bj-result.push { color: var(--muted); }
+.bj-chips { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.bj-chip-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  font-family: var(--font-arcade);
+  font-size: 0.55rem;
+  cursor: pointer;
+}
+.bj-chip-btn:hover { border-color: var(--cyan); }
+.bj-chip-btn:active { transform: scale(0.95); }
+
+/* ── FreeCell ────────────────────────────────────────────────── */
+/* Reuses the .sol-card / .sol-pile visuals from Solitaire; only the grid
+   needs its own 8-column math instead of Solitaire's 7. */
+
+.fc-board {
+  --gap: 6px;
+  --card-w: calc((100cqw - 7 * var(--gap)) / 8);
+  --card-h: calc(var(--card-w) * 1.4);
+  --fan: calc(var(--card-h) * 0.22);
+  width: 100%;
+}
+.fc-row { display: grid; grid-template-columns: repeat(8, 1fr); gap: var(--gap); }
+.fc-cells-row { margin-bottom: calc(var(--gap) * 2); }
+.fc-free, .fc-found { height: var(--card-h); border-radius: 8px; }
+.fc-col { height: calc(var(--card-h) + (var(--n, 1) - 1) * var(--fan)); }

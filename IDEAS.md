@@ -35,7 +35,10 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 - [x] Hangman
 - [ ] Typing test, reaction-time test
 - [ ] Tower defense
-- [ ] Local two-player Pong / tank battle
+- [x] Local two-player game (Air Hockey, one keyboard split WASD / arrows)
+- [x] Missile Command
+- [x] Blackjack
+- [x] FreeCell
 
 ## More open-source games
 - [x] js13kGames 2015, 2017, 2024 and 2025 entries (22 added)

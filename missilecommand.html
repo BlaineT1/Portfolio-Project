@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Missile Command: click or tap to fire interceptors and protect six cities from an endless sky of falling missiles. Free in your browser at Neon Arcade.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Missile Command · Neon Arcade">
+  <meta property="og:description" content="Missile Command: click or tap to fire interceptors and protect six cities from an endless sky of falling missiles. Free in your browser at Neon Arcade.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/missilecommand.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Missile Command · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--orange)">💥 MISSILE COMMAND</h1>
+
+    <div class="scorebar">
+      <span class="chip">Score <b id="score">0</b></span>
+      <span class="chip">Cities <b id="cities">6</b></span>
+      <span class="chip">Wave <b id="wave">1</b></span>
+      <span class="chip">Best <b id="best">0</b></span>
+    </div>
+
+    <div class="stage stage-560 mc-stage">
+      <canvas id="game" width="560" height="360"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">MISSILE COMMAND</h2>
+        <p id="overlay-msg">Click or tap anywhere to fire an interceptor from your nearest silo.<br>Protect your six cities from the falling sky.</p>
+        <button class="btn" id="overlay-btn">START</button>
+      </div>
+    </div>
+
+    <p class="hint">Interceptors always detonate where you aim. Later waves split into multiple warheads. P pauses.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/missilecommand.js"></script>
+</body>
+</html>

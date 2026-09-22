@@ -1,6 +1,6 @@
 # 🕹️ Neon Arcade
 
-A game website — 27 original browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
+A game website — 31 original browser games built with vanilla HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
 ## Games
 
@@ -33,6 +33,10 @@ A game website — 27 original browser games built with vanilla HTML, CSS, and J
 | 🧮 **Sudoku** | Type or tap numbers, N for notes, arrows to move. Every puzzle has one solution. Best time is saved. |
 | 📦 **Sokoban** | Arrows / WASD / swipe to push crates onto targets. Z undoes, R restarts. 12 levels. |
 | ✏️ **Hangman** | Type or tap letters. Six misses and it's over; win streaks are the score. |
+| 💥 **Missile Command** | Click or tap to fire. Interceptors detonate where you aim. P pauses. |
+| 🃏 **Blackjack** | Pick chips, hit Deal. H hits, S stands. Dealer stands on 17; blackjack pays 3:2. |
+| ♣️ **FreeCell** | Click a card then its destination, or drag. Every card deals face up. Z undoes. |
+| 🏒 **Air Hockey** | Two players, one keyboard. Cyan: WASD. Pink: arrow keys. First to 7. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 

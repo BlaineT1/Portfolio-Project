@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a14">
+  <meta name="description" content="Air Hockey for two, one keyboard. WASD versus the arrow keys, first to seven goals. Free in your browser at Neon Arcade.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Neon Arcade">
+  <meta property="og:title" content="Air Hockey · Neon Arcade">
+  <meta property="og:description" content="Air Hockey for two, one keyboard. WASD versus the arrow keys, first to seven goals. Free in your browser at Neon Arcade.">
+  <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/airhockey.html">
+  <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <title>Air Hockey · Neon Arcade</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem("neon-arcade-theme") || "dark";</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏒</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="top-nav"><a href="index.html">◂ ARCADE</a></nav>
+
+  <main class="game-shell">
+    <h1 class="game-title" style="color: var(--cyan)">🏒 AIR HOCKEY</h1>
+
+    <div class="scorebar">
+      <span class="chip">Cyan <b id="p1-score">0</b></span>
+      <span class="chip">Pink <b id="p2-score">0</b></span>
+      <span class="chip">Matches <b id="matches">0 – 0</b></span>
+    </div>
+
+    <div class="stage stage-560">
+      <canvas id="game" width="560" height="340"></canvas>
+      <div class="overlay" id="overlay">
+        <h2 id="overlay-title">AIR HOCKEY</h2>
+        <p id="overlay-msg">Two players, one keyboard. Cyan is WASD, Pink is the arrow keys. First to 7 wins the match.</p>
+        <button class="btn" id="overlay-btn">START</button>
+      </div>
+    </div>
+
+    <p class="hint">Cyan (left) moves with WASD. Pink (right) moves with the arrow keys. Neither paddle can cross the middle.</p>
+  </main>
+
+  <script src="assets/arcade.js"></script>
+  <script src="assets/airhockey.js"></script>
+</body>
+</html>
