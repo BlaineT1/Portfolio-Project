@@ -4,10 +4,13 @@ name: Deploy to GitHub Pages
 # Pushing to gh-pages only needs the default token's contents:write,
 # so no repo-admin permissions are involved.
 
+# ▼▼▼ AUTO-DEPLOY PAUSED ▼▼▼  Uncomment "push" below to resume deploying on every
+# push (the site was taken offline on request; ask to turn it back on).
 on:
-  push:
-    branches: [claude/rename-repo-game-website-piwcue]
+  # push:
+  #   branches: [claude/rename-repo-game-website-piwcue]
   workflow_dispatch:
+# ▲▲▲ AUTO-DEPLOY PAUSED ▲▲▲
 
 permissions:
   contents: write
