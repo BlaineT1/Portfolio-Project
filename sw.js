@@ -6,7 +6,7 @@
      is there; pages and scripts are refreshed in the background.
    Bump VERSION to make every visitor pick up a fresh copy of everything. */
 
-const VERSION = "2026-09-22";
+const VERSION = "2026-09-23";
 const CACHE = "neon-arcade-" + VERSION;
 const PRECACHE = [
   "./",
@@ -71,6 +71,7 @@ const PRECACHE = [
   "./assets/missilecommand.js",
   "./assets/neonbowl.js",
   "./assets/og-image.png",
+  "./assets/peerlink.js",
   "./assets/play.js",
   "./assets/pong.js",
   "./assets/rps.js",

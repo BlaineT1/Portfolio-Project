@@ -36,7 +36,7 @@ A game website — 31 original browser games built with vanilla HTML, CSS, and J
 | 💥 **Missile Command** | Click or tap to fire. Interceptors detonate where you aim. P pauses. |
 | 🃏 **Blackjack** | Pick chips, hit Deal. H hits, S stands. Dealer stands on 17; blackjack pays 3:2. |
 | ♣️ **FreeCell** | Click a card then its destination, or drag. Every card deals face up. Z undoes. |
-| 🏒 **Air Hockey** | Two players, one keyboard. Cyan: WASD. Pink: arrow keys. First to 7. |
+| 🏒 **Air Hockey** | Two players, one keyboard (Cyan: WASD, Pink: arrows), or "Play Online" to host or join a match with a friend on another computer — peer-to-peer, no accounts. First to 7. |
 
 High scores are saved per game in your browser's localStorage — nothing leaves your machine.
 

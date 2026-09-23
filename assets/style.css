@@ -1250,6 +1250,36 @@ footer {
 /* ── Air Hockey ──────────────────────────────────────────────── */
 /* Shares .stage/.stage-560 canvas sizing; no extra rules needed. */
 
+/* ── Online play (WebRTC "share a code" panel) ──────────────────
+   Reusable across any game that wires up PeerLink; only Air Hockey
+   uses it today. Scrolls internally since the code-exchange form is
+   taller than a typical game overlay. */
+
+#net-panel, .net-panel {
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+.net-hint { max-width: 100%; }
+.net-step, #net-choice { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; }
+.net-step[hidden], #net-choice[hidden], #net-join-answer-wrap[hidden] { display: none; }
+.net-code {
+  width: 100%;
+  max-width: 340px;
+  height: 64px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: monospace;
+  font-size: 0.7rem;
+  padding: 8px;
+  word-break: break-all;
+}
+.net-code:focus { outline: 2px solid var(--cyan); }
+p.net-status { min-height: 1.2em; color: var(--cyan); font-size: 0.8rem; margin: 0; }
+p.net-status.err { color: var(--pink); }
+
 /* ── Blackjack ───────────────────────────────────────────────── */
 
 .bj-stage { padding: 18px; overflow: visible; }

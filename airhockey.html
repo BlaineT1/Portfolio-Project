@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0a0a14">
-  <meta name="description" content="Air Hockey for two, one keyboard. WASD versus the arrow keys, first to seven goals. Free in your browser at Neon Arcade.">
+  <meta name="description" content="Air Hockey for two, one keyboard, or online with a friend on another computer. First to seven goals. Free in your browser at Neon Arcade.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Neon Arcade">
   <meta property="og:title" content="Air Hockey · Neon Arcade">
-  <meta property="og:description" content="Air Hockey for two, one keyboard. WASD versus the arrow keys, first to seven goals. Free in your browser at Neon Arcade.">
+  <meta property="og:description" content="Air Hockey for two, one keyboard, or online with a friend on another computer. First to seven goals. Free in your browser at Neon Arcade.">
   <meta property="og:url" content="https://blainet1.github.io/Portfolio-Project/airhockey.html">
   <meta property="og:image" content="https://blainet1.github.io/Portfolio-Project/assets/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -41,14 +41,48 @@
       <div class="overlay" id="overlay">
         <h2 id="overlay-title">AIR HOCKEY</h2>
         <p id="overlay-msg">Two players, one keyboard. Cyan is WASD, Pink is the arrow keys. First to 7 wins the match.</p>
-        <button class="btn" id="overlay-btn">START</button>
+        <div class="menu-row">
+          <button class="btn" id="overlay-btn">START</button>
+          <button class="btn btn-sm btn-ghost" id="online-btn">PLAY ONLINE</button>
+        </div>
+      </div>
+      <div class="overlay hidden" id="net-panel">
+        <h2>PLAY ONLINE</h2>
+        <div id="net-choice">
+          <p class="net-hint">Peer-to-peer, no accounts. One of you hosts, the other joins with a code.</p>
+          <div class="menu-row">
+            <button class="btn btn-sm" id="net-host-btn">HOST A MATCH</button>
+            <button class="btn btn-sm btn-ghost" id="net-join-btn">JOIN A MATCH</button>
+          </div>
+        </div>
+        <div class="net-step" id="net-host-step" hidden>
+          <p class="net-hint">1. Send this code to your friend:</p>
+          <textarea class="net-code" id="net-host-code" readonly aria-label="Your host code"></textarea>
+          <button class="btn btn-sm btn-ghost" id="net-host-copy">COPY CODE</button>
+          <p class="net-hint">2. Paste the code they send back, then connect:</p>
+          <textarea class="net-code" id="net-host-answer" placeholder="Paste their code here" aria-label="Their code"></textarea>
+          <button class="btn btn-sm" id="net-host-connect">CONNECT</button>
+        </div>
+        <div class="net-step" id="net-join-step" hidden>
+          <p class="net-hint">1. Paste the code your friend sent you:</p>
+          <textarea class="net-code" id="net-join-offer" placeholder="Paste their code here" aria-label="Their code"></textarea>
+          <button class="btn btn-sm" id="net-join-submit">JOIN</button>
+          <div id="net-join-answer-wrap" hidden>
+            <p class="net-hint">2. Send this code back to them:</p>
+            <textarea class="net-code" id="net-join-code" readonly aria-label="Your answer code"></textarea>
+            <button class="btn btn-sm btn-ghost" id="net-join-copy">COPY CODE</button>
+          </div>
+        </div>
+        <p class="net-status" id="net-status"></p>
+        <button class="btn btn-sm btn-ghost" id="net-cancel">CANCEL</button>
       </div>
     </div>
 
-    <p class="hint">Cyan (left) moves with WASD. Pink (right) moves with the arrow keys. Neither paddle can cross the middle.</p>
+    <p class="hint">Cyan (left) moves with WASD. Pink (right) moves with the arrow keys. Neither paddle can cross the middle. Online, either key set moves your own paddle.</p>
   </main>
 
   <script src="assets/arcade.js"></script>
+  <script src="assets/peerlink.js"></script>
   <script src="assets/airhockey.js"></script>
 </body>
 </html>

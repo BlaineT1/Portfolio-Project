@@ -40,6 +40,10 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 - [x] Blackjack
 - [x] FreeCell
 
+## Online multiplayer
+- [x] Cross-device play via WebRTC with manual "share a code" signaling, no accounts or server (`assets/peerlink.js`) — first wired up in Air Hockey
+- [ ] Bring the same PeerLink connector to Pong or another head-to-head game
+
 ## More open-source games
 - [x] js13kGames 2015, 2017, 2024 and 2025 entries (22 added)
 - [x] Curated lists and GitHub topic pages (16 added: 12 more js13k entries, SYNTHBLAST, Word Pluck, Drunken Viking, Dungeon Crawler RPG)
