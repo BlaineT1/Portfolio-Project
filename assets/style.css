@@ -1361,29 +1361,3 @@ p.net-status.err { color: var(--pink); }
   margin: 18px 0 0;
 }
 .request-btn { display: inline-block; text-decoration: none; }
-.request-link { color: var(--muted); font-size: 0.9rem; }
-.request-link:hover { color: var(--cyan); }
-
-/* ── Game requests page ──────────────────────────────────────── */
-
-.requests {
-  width: min(680px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 24px 0;
-  text-align: center;
-}
-.req-gate { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 32px; }
-.req-gate p { color: var(--muted); margin: 0; }
-.req-gate .sb-search { width: min(260px, 100%); text-align: center; }
-.req-error { color: var(--pink) !important; }
-.req-error[hidden], .requests [hidden] { display: none; }
-.req-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 24px 0 8px; }
-.req-status { color: var(--muted); }
-.req-list { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 12px; text-align: left; }
-.req-item { background: var(--card, rgba(255,255,255,0.04)); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
-.req-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
-.req-game { font-size: 1.05rem; margin: 0; }
-.req-badge { font-family: var(--font-arcade); font-size: 0.5rem; color: #0a0a14; background: var(--lime); border-radius: 6px; padding: 4px 8px; }
-.req-why { color: var(--text); margin: 8px 0 0; line-height: 1.5; white-space: pre-wrap; overflow-wrap: anywhere; }
-.req-meta { color: var(--muted); font-size: 0.82rem; margin: 8px 0 0; }
-.req-link { display: inline-block; margin-top: 6px; font-size: 0.85rem; }

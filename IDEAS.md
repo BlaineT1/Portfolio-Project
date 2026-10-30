@@ -20,7 +20,7 @@ Things we talked about adding to Neon Arcade. Done items stay here for the recor
 ## Games hub
 - [ ] Category chips (Action, Puzzle, Arcade, Board, 3D, Two-player) next to the search box
 - [x] Favorites at the top of the hub (star on each card)
-- [x] "Request a game" button on the hub (GitHub issue form, `.github/ISSUE_TEMPLATE/game-request.yml`)
+- [x] "Request a game" button on the hub, linked to a Google Form (responses go to Blaine)
 - [ ] Recently played on the hub
 - [ ] Random game button / game of the day
 - [ ] Stats page: every saved best score and trophies across the house games
