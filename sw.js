@@ -6,7 +6,7 @@
      is there; pages and scripts are refreshed in the background.
    Bump VERSION to make every visitor pick up a fresh copy of everything. */
 
-const VERSION = "2026-09-23";
+const VERSION = "2026-10-30";
 const CACHE = "neon-arcade-" + VERSION;
 const PRECACHE = [
   "./",

@@ -1349,3 +1349,17 @@ p.net-status.err { color: var(--pink); }
 .fc-cells-row { margin-bottom: calc(var(--gap) * 2); }
 .fc-free, .fc-found { height: var(--card-h); border-radius: 8px; }
 .fc-col { height: calc(var(--card-h) + (var(--n, 1) - 1) * var(--fan)); }
+
+/* ── "Request a game" row on the hub ─────────────────────────── */
+
+.request-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px 0 0;
+}
+.request-btn { display: inline-block; text-decoration: none; }
+.request-link { color: var(--muted); font-size: 0.9rem; }
+.request-link:hover { color: var(--cyan); }
