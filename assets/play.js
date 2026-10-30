@@ -681,6 +681,18 @@
       height: 640,
       hint: "Arrow keys or WASD roll the ball through a 3D maze. Each level is bigger than the last.",
     },
+    bloxorz: {
+      name: "Bloxorz Clone",
+      title: "🧱 BLOXORZ CLONE",
+      color: "var(--cyan)",
+      src: "games/bloxorz/index.html",
+      author: "Evan Mouroutsos",
+      authorUrl: "https://github.com/binary-signal",
+      source: "https://github.com/binary-signal/bloxorz-game-clone",
+      license: "BSD-3-Clause",
+      height: 720,
+      hint: "Arrow keys roll the brick; finish each level standing upright on the goal tile. W A S D Q E Z X move the camera, R resets it.",
+    },
   };
 
   const key = new URLSearchParams(location.search).get("game");
