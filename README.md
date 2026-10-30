@@ -58,7 +58,7 @@ The hub's **Baseball** card links to Google's Fourth of July 2019 baseball Doodl
 
 ## More games from around the web
 
-The hub's last section hosts 95 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
+The hub's last section hosts 94 open-source games under `games/`, each wrapped by `play.html` with credit to its author:
 
 | Game | Author | License |
 |------|--------|---------|
@@ -156,7 +156,6 @@ The hub's last section hosts 95 open-source games under `games/`, each wrapped b
 | ⌨️ Word Pluck | [Kailash Nadh](https://github.com/knadh/wordpluck) | MIT |
 | 🍺 Drunken Viking | [Cong Xu](https://github.com/cxong/DrunkenViking) | MIT |
 | ⚔️ Dungeon Crawler RPG | [Red Pangilinan](https://github.com/redpangilinan/dungeon-crawler-rpg-od) | GPL-3.0 |
-| 🧱 Bloxorz Clone | [Evan Mouroutsos](https://github.com/binary-signal/bloxorz-game-clone) | BSD-3-Clause |
 
 Each game's original license file ships alongside it. The copies here are unmodified apart from removing the authors' ad and analytics tags (this site runs none) and fixing paths so they work from a subfolder.
 
